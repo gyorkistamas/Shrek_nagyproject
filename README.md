@@ -14,4 +14,4 @@ Shrek csapat nagy project
 
 Autósiskola honlapja egy információs és szolgáltatási központ, amely segíti a leendő tanulókat a vezetési képzés megkezdésében.
 
-![pngimg com - shrek_PNG29](https://c0.klipartz.com/pngpicture/308/494/gratis-png-lightning-mcqueen-mater-doc-hudson-cars-la-compania-de-walt-disney-cars.png)
+![pngimg com - shrek_PNG29](https://i.imgur.com/DtuX9AC.png)
