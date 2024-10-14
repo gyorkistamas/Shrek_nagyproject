@@ -3,6 +3,9 @@
 
 
 ## 2. Vágyálom rendszer
+    Az autóiskola projekt egy Laravel keretrendszerben készül, amely adatbázis-alapú megoldást kínál a tanulók és oktatók adminisztrációs feladatainak kezelésére. A rendszer lehetőséget biztosít arra, hogy a     felhasználók tanulóként vagy adminisztrátorként (oktatóként) jelentkezzenek be.
+
+    Tanulóként a felhasználók hozzáférhetnek a levezetett órákhoz, követhetik előrehaladásukat különböző fokozatokban (kezdő / haladó), és vizsgajelentkezéseket adhatnak le. Az adminok, azaz az oktatók, teljes    körű adminisztratív jogosultságokkal rendelkeznek: új vizsgákat írhatnak ki, vezetési időpontokat hozhatnak létre vagy módosíthatnak, és kezelhetik a tanulók adatait.
 
 
 ## 3. Jelenlegi üzleti folyamatok modellje
