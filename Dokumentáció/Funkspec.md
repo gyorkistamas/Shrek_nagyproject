@@ -7,6 +7,8 @@
 
     Tanulóként a felhasználók hozzáférhetnek a levezetett órákhoz, követhetik előrehaladásukat különböző fokozatokban (kezdő / haladó), és vizsgajelentkezéseket adhatnak le. Az adminok, azaz az oktatók, teljes    körű adminisztratív jogosultságokkal rendelkeznek: új vizsgákat írhatnak ki, vezetési időpontokat hozhatnak létre vagy módosíthatnak, és kezelhetik a tanulók adatait.
 
+    A rendszerben az autók is tárolásra kerülnek.
+
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 
@@ -21,6 +23,7 @@
 
 
 ## 6. Használati esetek
+    A felhasználók (tanulók és oktatók) bejelentkezhetnek a rendszerbe. A tanulók hozzáférhetnek a profiljukhoz, megtekinthetik a levezetett óráikat és jelentkezhetnek vizsgákra. Az oktatók  vezetési időpontokat hozhatnak létre, szerkeszthetik a tanulók adatait, valamint új vizsgákat írhatnak ki, amelyekre a tanulók jelentkezhetnek.
 
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
