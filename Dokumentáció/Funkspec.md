@@ -21,7 +21,7 @@
 
 
 ## 6. Használati esetek
-    A felhasználók (tanulók és oktatók) bejelentkezhetnek a rendszerbe. A tanulók hozzáférhetnek a profiljukhoz, megtekinthetik a levezetett óráikat és jelentkezhetnek vizsgákra. Az oktatók  vezetési időpontokat hozhatnak létre, szerkeszthetik a tanulók adatait, valamint új vizsgákat írhatnak ki, amelyekre a tanulók jelentkezhetnek.
+    A felhasználók (tanulók és oktatók) bejelentkezhetnek a rendszerbe és tanulóként vizsgákat vehetnek fel, vezetési időpontokat foglalhatnak le és szerkeszhetik a profiljukat sikeres jogosítvány szerzés segítésére. Az oktatók vizsgákat, vezetési időpontokat adhatnak meg és szerkeszthetnek, profilopkat szerkeszthetnek. 
 
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
