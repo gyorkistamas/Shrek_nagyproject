@@ -9,6 +9,7 @@
 ## 4. Jelenlegi üzleti folyamatok modellje
 
 ## 5. Igényelt üzleti folyamatok modellje
+![utleti folyamatok](uzletifolyamatok_modelje.png)
 
 ## 6. Követelménylista
 
