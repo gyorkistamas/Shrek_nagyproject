@@ -1,6 +1,6 @@
 # Követelmény specifikáció
 ## 1. Áttekintés
-
+A jogosítványszerzés napjainkban szinte elengedhetetlen, hiszen a vezetési képesség nemcsak a mobilitást növeli, hanem lehetőséget ad a mindennapi feladatok könnyebb elvégzésére és a munkaerőpiacon is előnyt jelenthet. Az autósiskolák ebben a folyamatban kulcsszerepet játszanak, hiszen nem csupán a közlekedési szabályok és a vezetés technikai alapjainak megtanításában segítenek, hanem a felelős és biztonságos vezetés szemléletét is közvetítik. Egy jó autósiskola megfelelően felkészít a valós közlekedési helyzetekre, és magabiztos vezetővé tesz, aki képes gyorsan és biztonságosan reagálni a váratlan szituációkra.
 
 ## 2. Jelenlegi helyzet
 
@@ -9,6 +9,7 @@
 
 
 ## 4. Jelenlegi üzleti folyamatok modellje
+Egy autósiskola számára készülő weboldal modellje kulcsfontosságú szerepet játszik abban, hogy modern és hatékony módon támogassa az iskolába jelentkező tanulókat. A weboldal elsődleges célja, hogy megkönnyítse az információhoz való hozzáférést és a beiratkozási folyamatot. Az oldal felépítése egyszerű és átlátható, hogy a látogatók gyorsan megtalálják az autósiskola szolgáltatásait, az oktatók bemutatkozását, valamint a tanfolyami időpontokat és árakat. Az interaktív funkciók – például a gyors regisztráció, a vizsgafelkészítő tesztek és a konzultációs időpontok foglalása – lehetőséget adnak a diákok számára, hogy könnyedén és rugalmasan intézhessék tanulási folyamataikat. Az oldal továbbá egy központi kommunikációs platformként is szolgál, ahol a tanulók értesítéseket és naprakész információkat kaphatnak a tanfolyam előrehaladásáról és a vizsgaidőpontokról. <!-- nem végleges -->
 
 
 ## 5. Igényelt üzleti folyamatok modellje
