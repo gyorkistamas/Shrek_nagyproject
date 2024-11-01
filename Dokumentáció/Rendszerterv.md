@@ -66,26 +66,33 @@
  | :---: | --- | --- | --- |
 
 ### Funkcionális
-  
+  | Id | Modul | Név | Leírás |
+  | :---: | --- | --- | --- |
+  | F1 | Főoldal| Főoldal| Kezdő oldal, információkal és az összes gomb elérhető rajta bejelentkezés után |
+  | F1 | Bejelentkeztető | Bejelentkeztető | bejelentkezést végrehajtó kód |
+  | F2 | Bejelentkeztető | Bejelentkezési lap | oldal amin keresztül a bejelentkezés történik |
+  | F3 | Bejelentkeztető | Bejelentkezés ellenörző | felhasználó oldali bejelenkezási form ellenörző |
+  | F4 | Regisztrációs | Regisztrálás kezelő | regisztrációt végrehajtó kód |
+  | F5 | Regisztrációs | Regisztálási lap | oldal amin keresztül a regisztrálás történik |
+  | F6 | Regisztrációs | Regisztálás ellenörző | felhasználó oldali adat ellenörző |
+  | F7 | Felhasználó | Felhasználó | felhasználói profil, a felhasználó szerkesztheti |
+  | F8 | Vezetés | Vezetés Lista Kezelő | Vezetési listát megjelenítő kód és szerkesztő és jelentkezési tanulók számára kód |
+  | F9 | Vezetés | Vezetés Lista lap| Oldal amin keresztűl elérhető a vezetési időpontok listája és tanuló és oktató számára más funkcionális gombok |
+  | F10 | Vizsga | Vizsga Lista Kezelő | Vizsga listát megjelenítő kód és szerkesztő és jelentkezési tanulók számára kód |
+  | F11 | Vizsga | Vizsga Lista lap| Vizsga amin keresztűl elérhető a vizsga időpontok listája és tanuló és oktató számára más funkcionális gombok |
+  | F12 | Tanulók | Tanulók Lista Kezelő | minden regisztrált felhasználót megjelenítő kód, felhasználó kezelő kód |
+  | F13 | Tanulók | Tanulók Lista lap | Oldal amin keresztűl elérhető a regisztrált felhasználók listája és szerkeszthetők az adataik |
 
 ### Nem Funkcionális
+  | ID | Megnevezés | Leírás |
+  | --- | --- | --- |
+  | K9 | Jogosultság kezelés | Látogató, felhasználó és adminisztrátor megkülönböztetése |
+  | K10 | Felhasználó kezelés | Felhasználói fiók létrehozása, adatok tárolása |
+  | K11 | Modern felület | Könnyen navigálható felület |
 
    
 ## 5. Funkcionális terv
-| F1 | Főoldal| Főoldal| Kezdő oldal, információkal és az összes gomb elérhető rajta bejelentkezés után |
-| F1 | Bejelentkeztető | Bejelentkeztető | bejelentkezést végrehajtó kód |
-| F2 | Bejelentkeztető | Bejelentkezési lap | oldal amin keresztül a bejelentkezés történik |
-| F3 | Bejelentkeztető | Bejelentkezés ellenörző | felhasználó oldali bejelenkezási form ellenörző |
-| F4 | Regisztrációs | Regisztrálás kezelő | regisztrációt végrehajtó kód |
-| F5 | Regisztrációs | Regisztálási lap | oldal amin keresztül a regisztrálás történik |
-| F6 | Regisztrációs | Regisztálás ellenörző | felhasználó oldali adat ellenörző |
-| F10 | Felhasználó | Felhasználó | felhasználói profil, a felhasználó szerkesztheti |
-| F11 | Vezetés | Vezetés Lista Kezelő | Vezetési listát megjelenítő kód és szerkesztő és jelentkezési tanulók számára kód |
-| F11 | Vezetés | Vezetés Lista lap| Oldal amin keresztűl elérhető a vezetési időpontok listája és tanuló és oktató számára más funkcionális gombok |
-| F11 | Vizsga | Vizsga Lista Kezelő | Vizsga listát megjelenítő kód és szerkesztő és jelentkezési tanulók számára kód |
-| F11 | Vizsga | Vizsga Lista lap| Vizsga amin keresztűl elérhető a vizsga időpontok listája és tanuló és oktató számára más funkcionális gombok |
-| F11 | Tanulók | Tanulók Lista Kezelő | minden regisztrált felhasználót megjelenítő kód, felhasználó kezelő kód |
-| F11 | Tanulók | Tanulók Lista lap | Oldal amin keresztűl elérhető a regisztrált felhasználók listája és szerkeszthetők az adataik |
+
     
 ### 5.1 Rendszerszereplők
 
