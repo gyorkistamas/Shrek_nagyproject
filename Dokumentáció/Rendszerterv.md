@@ -95,9 +95,24 @@
 
     
 ### 5.1 Rendszerszereplők
+- Látogató
+  - Korlátozott hozzáférés.
+- Tanuló/Felhasználó
+   - Szerkeszti a profilját, viszgát/vezetési időpontot vehet fel.
+- Oktató/Adminisztrátor
+  - Rendelkezik a felhasználó jogaival, és új viszgát/vezetési időpontot vesz fel vagy szerkeszt, felhasználókat szerkeszt.
 
    
 ### 5.2 Menü-hierarchia:
+ 1. Főoldal
+ 2. Bejelentkezés
+ 3. Regisztráció
+ 4. Profil megtekintése
+    *  Profil szerkesztése
+ 5. Vezetés
+ 6. Vizsga
+ 7. Tanulók kezelése 
+ 8. Kijelentkezés
    
 ## 6. Fizikai környezet
 
