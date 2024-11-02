@@ -19,7 +19,7 @@
 
 
 ## 4. Igényelt üzleti folyamatok modellje
-
+![utleti folyamatok](uzletifolyamatok_modelje.png)
 
 ## 5. Követelménylista
 
@@ -55,8 +55,14 @@
 
 ## 10. Funkció - követelmény megfeleltetése
 
- | Id | Követelmény | Funkció |
- | :---: | --- | --- |
+| Lefedett használati eset | Követelmény | Követelmény azonosító(k) |
+| :---: | :---: | :---: |
+| 1. | nemtom1 | K3 |
+| 2. | nemtom2 | K1, K2, K4 |
+| 3. | nemtom3 | K1, K2, K5 |
+| 4. | nemtom4 | K1, K2, K7 |
+| 5. | nemtom5 | K1, K2, K6 |
+| 6. | nemtom6| K1, K2, K8 |
 
 ## 11. Fogalomszótár
 
