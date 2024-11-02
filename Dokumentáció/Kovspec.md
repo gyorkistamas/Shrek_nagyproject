@@ -3,7 +3,12 @@
 A jogosítványszerzés napjainkban szinte elengedhetetlen, hiszen a vezetési képesség nemcsak a mobilitást növeli, hanem lehetőséget ad a mindennapi feladatok könnyebb elvégzésére és a munkaerőpiacon is előnyt jelenthet. Az autósiskolák ebben a folyamatban kulcsszerepet játszanak, hiszen nem csupán a közlekedési szabályok és a vezetés technikai alapjainak megtanításában segítenek, hanem a felelős és biztonságos vezetés szemléletét is közvetítik. Egy jó autósiskola megfelelően felkészít a valós közlekedési helyzetekre, és magabiztos vezetővé tesz, aki képes gyorsan és biztonságosan reagálni a váratlan szituációkra.
 
 ## 2. Jelenlegi helyzet
-
+Cégünkkel felvette a kapcsolatot az egyik ügyfelünk, aki egy autósiskolát vezet.
+Eddig papír alapon tárolt el mindent, de egy hirtelen ugrás a népszerűségében korszerűsítésre kényszerítette.
+A webes felületünk feladata az lenne, hogy segítsük a diákok és oktatók közötti kommunikációt, eltároljuk a megfelelő adatokat és megkönnyítsük az adminisztrációt.
+Az a felhasználó, akit az adminisztrátor nem tesz be a rendszerbe, az csak az oktatókat és az iskola járműveit, valamint elérhetőségeket tekinthetnek meg.
+A diákok be tud jelentkezni, meg tudja változtatni adatait, megtekintheti azokat, valamint eddig levezetett óráit is megtekintheti
+Az oktatók ezen felül beléphetnek mint adminisztrátor és vezetési, valamint vizsgaidőpontot tudnak kiírni
 
 ## 3. Vágyálom rendszer
 
