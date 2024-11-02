@@ -40,8 +40,15 @@
 
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
-|ID|Leírás           |
-|-------------------------|---------------------------|
+| Lefedett használati eset | Követelmény | Követelmény azonosító(k) |
+| :---: | :---: | :---: |
+| 1. | minden látogató regisztrálhat | K3 |
+| 2. | regisztrált felhasználók áttekinthetik a statisztikáikat | K1, K2, K4 |
+| 3. | regisztrált felhasználók tudhatják mit teljesítettek az eddigiekben, illetve órákra jelentkezhetnek | K1, K2, K5 |
+| 4. | oktatók olvashatnak visszajelzéseket | K1, K2, K7 |
+| 5. | oktatók új feladványokat tölthetnek fel | K1, K2, K6 |
+| 6. | oktatók szerkeszthetnek felhasználói fiókokat | K1, K2, K8 |
+
 
 
 ## 8. Képernyőtervek

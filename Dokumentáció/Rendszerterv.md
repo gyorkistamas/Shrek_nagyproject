@@ -133,6 +133,8 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 ![Image](Képek/Adatbázis_Terv.png)
 
 ## 9. Implementációs terv
+A weboldal elkészítéséhez Laravel keretrendszert használunk. Az adatbázist Oracle-ben készítjük el. Az alkalmazás egyes elemei (képek, publikus fájlok, modellek, stb.) külön mappákban találhatóak. A dokumentáció, illetve a weboldalon megjelenő szövegektől eltekintve törekszünk a Magyar nyelv használatára.
+
 
     
 ## 10. Tesztterv
