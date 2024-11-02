@@ -72,4 +72,23 @@
 | 6. | nemtom6| K1, K2, K8 |
 
 ## 11. Fogalomszótár
++ **profil**: az oldalon való személyazonosság hitelesítéshez szükséges adat halmaz.
+    * részei:
+        - felhasználó név
+        - email cím
+        - jelszó
+        - jogkör(tanuló/oktató)
+		- elérhetőség (bannolva van-e?)
+		- előzőleg teljesített elsősegély vizsga
+        - Életkor
+        - Közoktatási alapvizsga
+        - Beiratkozási költségek (kifizette-e a tanfolyamot)
+        - KRESZ Vizsga (sikeres/sikertelen)
++ **látogató**: olyan fogyasztó aki nem rendelkezik felhasználói fiókkal.
++ **jogkör**: egy felhasználható által végre hajtható műveletek halmaza.
+    * fajtái:
+        - látogatói: játék
+        - felhasználói: játék (rögzítettve); értékelés írás
+        - moderátori: felhasználó; feladvány hozzáadás; felhasználók módosítása; hozzáférés az értékelésekhez
++ **IP**: "Intellectual Property"; Szellemi Tulajdon
 

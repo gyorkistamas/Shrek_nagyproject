@@ -112,6 +112,8 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
  8. Kijelentkezés
    
 ## 6. Fizikai környezet
+Laravel által szolgáltatott fejlesztői webszerver fejlesztés során, a kész projekt esetén tényleges webszerver.
+
 
 ### Vásárolt szoftverkomponensek, valamint esetleges külső rendszerek
 
@@ -127,6 +129,14 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 
     
 ## 7. Architekturális terv
+
+### 7.1 Webszerver
+
+Apache webszerver, IIS webszerver, Laravel által nyújtott fejelsztői webszerver
+
+### 7.2 Adatbázis rendszer
+
+MySql relációs adatbázis
 
     
 ## 8. Adatbázis terv
