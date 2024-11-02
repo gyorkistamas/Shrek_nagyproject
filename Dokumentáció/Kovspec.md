@@ -19,7 +19,7 @@ Egy autósiskola számára készülő weboldal modellje kulcsfontosságú szerep
 
 
 ## 5. Igényelt üzleti folyamatok modellje
-![utleti folyamatok](uzletifolyamatok_modelje.png)
+![utleti folyamatok](Képek/uzletifolyamatok_modelje.png)
 
 ## 6. Követelménylista
 | K1 | Főoldal| fő lap | A weboldal fő lapja ahol információk érhetőek el és ide kerül a látogató a weboldal felkeresésekor |

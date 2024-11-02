@@ -133,7 +133,7 @@
 
     
 ## 8. Adatbázis terv
-![Image](Adatbázis_Terv.png)
+![Image](Képek/Adatbázis_Terv.png)
 
 ## 9. Implementációs terv
 
