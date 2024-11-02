@@ -11,7 +11,8 @@ A diákok be tud jelentkezni, meg tudja változtatni adatait, megtekintheti azok
 Az oktatók ezen felül beléphetnek mint adminisztrátor és vezetési, valamint vizsgaidőpontot tudnak kiírni
 
 ## 3. Vágyálom rendszer
-
+Egy olyan webes alkalmazás készítése(a Laravel és az Angular keretrendszer használatával), ahol diákként tudod kezelni az adataid, oktatóként tudsz létrehozni vizsgákat és órákat, látogatóként pedig az oktatók és járművek adatait lehet megtekinteni.
+Lehessen az adminisztrátoroknak új felhasználót regisztrálni, a meglévő felhasználóknak különböző jogosultságokkal rendelkeznek, az egyszerű diákok bejelentkezhetnek egy bejelentkezési oldalon, megtekinthetik az adataikat egy adatlap segítségével, meg tudják változtatni azokat egy űrlap segítségével és megtekinthetik az eddig vezetett óráikat is. Ezeken felül az oktatók tudnak egy külön bejelentkezési felületen adminisztrátori módban belépni, vezetési időpontokat létrehozni egy űrlap segítségével, illetve egy másik űrlap segítségével vizsgaidőpontokat kiírni.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 Egy autósiskola számára készülő weboldal modellje kulcsfontosságú szerepet játszik abban, hogy modern és hatékony módon támogassa az iskolába jelentkező tanulókat. A weboldal elsődleges célja, hogy megkönnyítse az információhoz való hozzáférést és a beiratkozási folyamatot. Az oldal felépítése egyszerű és átlátható, hogy a látogatók gyorsan megtalálják az autósiskola szolgáltatásait, az oktatók bemutatkozását, valamint a tanfolyami időpontokat és árakat. Az interaktív funkciók – például a gyors regisztráció, a vizsgafelkészítő tesztek és a konzultációs időpontok foglalása – lehetőséget adnak a diákok számára, hogy könnyedén és rugalmasan intézhessék tanulási folyamataikat. Az oldal továbbá egy központi kommunikációs platformként is szolgál, ahol a tanulók értesítéseket és naprakész információkat kaphatnak a tanfolyam előrehaladásáról és a vizsgaidőpontokról. <!-- nem végleges -->
