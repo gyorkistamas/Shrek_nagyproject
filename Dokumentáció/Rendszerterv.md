@@ -1,52 +1,49 @@
 ## 1. A rendszer célja
 
+Egy olyan webes alkalmazás készítése(a Laravel és az Angular keretrendszer használatával), ahol diákként tudod kezelni az adataid, oktatóként tudsz létrehozni vizsgákat és órákat, látogatóként pedig az oktatók és járművek adatait lehet megtekinteni.
+Az a felhasználó aki nincs felvéve csak általános információkat érhet el az iskoláról. Az adminisztrátoroknak tudnak új felhasználót regisztrálni, a meglévő felhasználóknak különböző jogosultságokkal rendelkeznek, az egyszerű diákok bejelentkezhetnek, megtekinthetik az adataikat meg tudják változtatni azokat és megtekinthetik az eddig vezetett óráikat is. Ezeken felül az oktatók tudnak egy külön bejelentkezési felületen adminisztrátori módban belépni, vezetési időpontokat létrehozni, illetve vizsgaidőpontokat kiírni.
 
 ## 2. Projektterv
    
+   PHP, HTML, CSS, JavaScript használatával, Laravel és Angular keretrendszerben webalkalmazás létrehozása.
 ### 2.1 Projektszerepkörök, felelőségek
 * Scrum master:
-	-    	
+	-   Kovács Bence
 * Product owner:
-	-    
+	-   Kovács Bence
 * Üzleti szereplő:
-	-   Megrendelő:
-		 -  
+	-   Kovács Bence
    
 ### 2.2 Projektmunkások és felelőségek
    		
 * Frontend:
-	-   
-	-   
+	-   Kökény Kristóf
+	-   Török Bálint
 * Backend:  
-	-   
-	-   
+	-   Kadlót Levente
+	-   Gál Szabolcs
 	-   
 * Tesztelés:   
-	-   
-	-   
-	-   
-	-   
+	-   Kadlót Levente
+	-   Gál Szabolcs
+	-   Kökény Kristóf
+	-   Török Bálint
   
 ### 2.3 Ütemterv
 |Funkció                  | Feladat                   | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Határidő (nap) |
 |-------------------------|---------------------------|-----------|---------------|------------------------|------------------|---------------------|
-|Követelmény specifikáció |Megírás                    |         1 |             1 |                      1 |                1 |                   1 |             
-|Funkcionális specifikáció|Megírás                    |         1 |             1 |                      1 |                1 |                   1 |
-|Rendszerterv             |Megírás                    |         1 |             1 |                      1 |                1 |                   1 |
-|Program                  |Vizuális tervek elkészítése|         2 |             1 |                      1 |                1 |                   1 |
-|Program                  |Prototípus elkészítése     |         3 |             5 |                      5 |                0 |                   5 |
-|Program                  |Alapfunkciók elkészítése   |         3 |             5 |                      5 |                0 |                   5 |
-|Program                  |Extra funkciók elkészítése |         3 |             7 |                      7 |                0 |                   7 |
-|Program                  |Tesztelés                  |         4 |             2 |                      2 |                0 |                   2 |
+|Követelmény specifikáció |Megírás                    |         1 |             1 |                     20 |               19 |                   2 |             
+|Funkcionális specifikáció|Megírás                    |         1 |             1 |                     20 |               19 |                   2 |
+|Rendszerterv             |Megírás                    |         1 |             1 |                     20 |               19 |                   2 |
+|Program                  |Vizuális tervek elkészítése|         2 |            10 |                     20 |               19 |                  14 |
+|Program                  |Prototípus elkészítése     |         3 |            14 |                     21 |               19 |                  20 |
+|Program                  |Alapfunkciók elkészítése   |         3 |            14 |                     21 |               19 |                  20 |
+|Program                  |Extra funkciók elkészítése |         3 |            28 |                     28 |               19 |                  32 |
+|Program                  |Tesztelés                  |         4 |            40 |                     40 |               19 |                  49 |
 
    
 ### 2.4 Mérföldkövek
-   *   09.24. Követelmény specifikáció elkészítése
-   *   09.27. Funkcionális specifikáció elkészítése
-   *   09.30. Rendszerterv elkészítése
-   *   10.07. Back- és Front-end elkészítése
-   *   10.08. Előzetes tesztelések és prototípus elkészítése
-   *   10.11. Prototípus prezentálása
+
    
 ## 3. Üzleti folyamatok modellje
 
