@@ -153,6 +153,7 @@ A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeke
 ## 10.1 Tesztelési dokumentáció vezetése
 
 | ID | Rövid leírás | Várt eredmény | Kapott eredmény | Megjegyzés |
+| :---: | --- | --- | --- | --- |
 
 
 ## 11. Telepítési terv
