@@ -16,7 +16,9 @@
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 
-    Az ügyfél megbízott minket egy autósiskola weboldal elkészítésével, amelynek célja a tanulók és oktatók közötti kommunikáció egyszerűsítése, gondolok itt a vizsgára való jelentkezésre, vagy a vezetési óra egyeztetésére. A rendszer forrása az ügyfelet fogja illetni, és igényként szerepel annak további bővítési lehetősége is. Elvárás, hogy a kód alapja könnyen újra felhasználható és alapként szolgálhasson a jövőbeli fejlesztésekhez. Az oldal működtetését az ügyfél saját magának fogja végezni, így fontos, hogy a weboldal karbantartásához és moderálásához nem programozói háttérrel rendelkező személyeket terveznek kinevezni. Ennek megfelelően a tervezés és kivitelezés során kulcsfontosságú szempont, hogy minden felmerülő CRUD (Create, Read, Update, Delete) művelethez grafikus felületet biztosítsunk, amely felhasználóbarát és könnyen navigálható. 
+    A weboldal forrása az autósiskolát fogja illetni, és igényként szerepel annak további bővítési lehetősége is. 
+    Elvárás, hogy a kód alapja könnyen újra felhasználható és alapként szolgálhasson a jövőbeli fejlesztésekhez. 
+    Az oldal működtetését az autósiskola saját magának fogja végezni, így fontos, hogy a weboldal karbantartásához és moderálásához nem programozói háttérrel rendelkező személyeket terveznek kinevezni. Ennek megfelelően a tervezés és kivitelezés során kulcsfontosságú szempont, hogy minden felmerülő CRUD (Create, Read, Update, Delete) művelethez grafikus felületet biztosítsunk, amely felhasználóbarát és könnyen navigálható. 
     
     A projekt során figyelembe kell venni, hogy az oldal adatbázis-kezelése megfelelően tervezett legyen, megfelelve a szakmai normáknak és az adatbányászati céloknak. 
     A szükséges adatbázis-struktúrákat és relációkat a jövőbeli bővítések figyelembevételével kell kialakítani, lehetővé téve a rugalmas adathasználatot és -kezelést.
