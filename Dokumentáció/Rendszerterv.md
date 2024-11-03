@@ -50,7 +50,8 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 ![tanuló hozzáadó felület](../Img/business.png)
 
 ### 3.1 Üzleti szereplők
-
+- [ ] Felhasználó (Tanuló)
+- [ ] Adminisztrátor (Oktató)
    
 ### 3.2 Üzleti folyamatok
 
