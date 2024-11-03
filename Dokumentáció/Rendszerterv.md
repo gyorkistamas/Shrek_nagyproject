@@ -146,8 +146,13 @@ MySql relációs adatbázis
 A weboldal elkészítéséhez Laravel keretrendszert használunk. Az adatbázist Oracle-ben készítjük el. Az alkalmazás egyes elemei (képek, publikus fájlok, modellek, stb.) külön mappákban találhatóak. A dokumentáció, illetve a weboldalon megjelenő szövegektől eltekintve törekszünk a Magyar nyelv használatára.
 
 
-    
 ## 10. Tesztterv
+
+A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeket mindenki külön fájlban tárolja, pl. markdown fájlokban, excelben vagy wordben. Ezeket külön ID-val, rövid leírással, várt eredménnyel, kapott eredménnyel és megjegyzéssel látjuk el. 
+
+## 10.1 Tesztelési dokumentáció vezetése
+
+| ID | Rövid leírás | Várt eredmény | Kapott eredmény | Megjegyzés |
 
 
 ## 11. Telepítési terv
