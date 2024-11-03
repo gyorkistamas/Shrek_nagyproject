@@ -222,4 +222,4 @@ A Laravel API az http://localhost:8000, az Angular alkalmazás pedig a http://lo
 
 ## 12. Karbantartási terv
 
-
+A karbantartási terv célja, hogy a weboldal folyamatosan megbízhatóan és biztonságosan működjön. Rendszeres frissítések, biztonsági ellenőrzések, teljesítmény optimalizálás és felhasználói visszajelzések figyelembevételével biztosítható a projekt hosszú távú fenntarthatósága és sikeressége.
