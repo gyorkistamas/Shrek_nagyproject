@@ -123,17 +123,39 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 ## 6. Fizikai környezet
 Laravel által szolgáltatott fejlesztői webszerver fejlesztés során, a kész projekt esetén tényleges webszerver.
 
+### 6.1 Fejlesztő eszközök
 
-### Vásárolt szoftverkomponensek, valamint esetleges külső rendszerek
+- [ ] Kódszerkesztés:
 
+Visual Studio Code használata, népszerű és ingyenes kód szerkesztő, sok bővítménnyel, mint például a Laravel Blade, PHP Intelephense, Angular Language Service + leírónyelvek és keretrendszerek: pl. Laravel, Angular, PHP, HTML, CSS, JavaScript, BootStrap.
+
+- [ ] Verziókezelő rendszerek:
+
+ A kód változásainak nyomonkövetésére a GitHub használható, ez segít a távoli repository-kat kezelni és elérni.
+
+- [ ] Csomagkezelők:
+
+Composer (PHP csomagkezelő), amely lehetővé teszi a Laravel és egyéb PHP csomagok egyszerű telepítését és kezelését.
+
+npm/yarn: Node.js csomagkezelők, amelyek Angular csomagok és függőségek kezelésére szolgálnak.
+
+- [ ] Adatbáziskezelők:
+
+MySQL Workbench: Grafikus felület az adatbázisok kezelésére és a lekérdezések írására.
+
+phpMyAdmin: Webalapú adatbázis-kezelő eszköz, amely segít az adatbázisok adminisztrálásában.
+
+- [ ] Dokumentációk és kommunikáció: 
+
+Trello: Projektmenedzsment eszközök a feladatok nyomon követésére és a csapatmunkára.
+
+Discord és Messenger használata a csoportos kommunikációhoz.
 
 ### Hardver topológia
 
 
 ### Fizikai alrendszerek
 
-
-### Fejlesztő eszközök
 
 
     
