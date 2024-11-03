@@ -121,6 +121,7 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
  8. Kijelentkezés
    
 ## 6. Fizikai környezet
+
 Laravel által szolgáltatott fejlesztői webszerver fejlesztés során, a kész projekt esetén tényleges webszerver.
 
 ### 6.1 Fejlesztő eszközök
@@ -148,12 +149,9 @@ Dokumentációk és kommunikáció:
 - [ ] Trello: Projektmenedzsment eszközök a feladatok nyomon követésére és a csapatmunkára.
 - [ ] Discord és Messenger használata a csoportos kommunikációhoz.
 
-### Hardver topológia
+### 6.2 Hardver topológia
 
-
-### Fizikai alrendszerek
-
-
+Egy szerver, weboldal kiszolgáló funkciókkal és szerver adatbázis kiszolgálóval.
 
     
 ## 7. Architekturális terv
