@@ -162,7 +162,9 @@ A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeke
 | Teszt megnevezése | Elvárt eredmény |
 | :---: | --- |
 | Regisztráció tesztelése nem megfelelő email címmel. | A webes felület felhívja a figyelmet az email cím helytelenségére, megjelenítve a hibaüzenetet: "Kérjük, adjon meg egy érvényes email címet." |
-| Regisztráció tesztelése már létező email címmel. | A rendszer értesíti a felhasználót, hogy az email cím már regisztrálva van, megjelenítve a hibaüzenetet: "Ez az email cím már regisztrálva van." |
+| Regisztráció tesztelése már létező email címmel. | Az oldal értesíti a felhasználót, hogy az email cím már regisztrálva van, megjelenítve a hibaüzenetet: "Ez az email cím már regisztrálva van." |
+| Regisztráció tesztelése kötelező mezők nélkül | Az oldal értesíti a felhasználót, hogy a kötelező mezők kitöltése szükséges, megjelenítve a hibaüzenetet: "A név, email, jelszó mező kitöltése kötelező." |
+
 
 ## 11. Telepítési terv
 
