@@ -154,7 +154,8 @@ A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeke
 
 | ID | Rövid leírás | Várt eredmény | Kapott eredmény | Megjegyzés |
 | :---: | --- | --- | --- | --- |
-
+| TB_001 | Felhasználó bejelentkezés | A felhasználó hiba nélkül be tud jelentkezni | Sikeres bejelentkezés | Mindent rendben találtam |
+| TB_002 | Adminisztrátor bejelentkezés | Az adminisztrátor hiba nélkül be tud jelentkezni | Sikeres bejelentkezés | Mindent rendben találtam |
 
 ## 11. Telepítési terv
 
