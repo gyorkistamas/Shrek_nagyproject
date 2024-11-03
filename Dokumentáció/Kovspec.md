@@ -22,7 +22,10 @@ Egy autósiskola számára készülő weboldal modellje kulcsfontosságú szerep
 ![utleti folyamatok](Képek/uzletifolyamatok_modelje.png)
 
 ## 6. Követelménylista
-| K1 | Főoldal| fő lap | A weboldal fő lapja ahol információk érhetőek el és ide kerül a látogató a weboldal felkeresésekor |
+
+| Id | Modul | Név | Leírás |
+| :---: | --- | --- | --- |
+| K1 | Főoldal| Fő lap | A weboldal fő lapja ahol információk érhetőek el és ide kerül a látogató a weboldal felkeresésekor |
 | K2 | Bejelentkezés | Bejelentkezési lap | Bejelentkező felület |
 | K3 | Regisztráció | Regisztrációs lap | Regisztrációs felület látogatóknak. |
 | K4 | Saját profil megtekintése | Felhasználó lap | A felhasználó megtekintheti a saját adatait ás válzotathat az adatain |
