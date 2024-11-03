@@ -47,7 +47,7 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
    
 ## 3. Üzleti folyamatok modellje
 
-![tanuló hozzáadó felület](../Img/business.png)
+![tanuló hozzáadó felület](../Dokumentáció/Képek/uzletifolyamatok_modelje.png)
 
 ### 3.1 Üzleti szereplők
 - [ ] Felhasználó (Tanuló)
