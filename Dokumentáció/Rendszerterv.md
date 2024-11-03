@@ -171,7 +171,7 @@ A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeke
 | Bejelentkezés helytelen jelszóval. | Az oldal értesíti a felhasználót, hogy a bejelentkezés sikertelen volt, és megjelenít egy hibaüzenetet: "Hibás email cím vagy jelszó." |
 | Bejelentkezés üres mezőkkel. | A webldal értesíti a felhasználót, hogy a kötelező mezők kitöltése szükséges, megjelenítve a hibaüzenetet: "Kérjük, adja meg a/az felhasználónevet / email címet és a jelszót." |
 
-| ...További tesztelések folytatása egységesen a tesztelések dokumentációban... |
+További tesztelések folytatása egységesen a tesztelések dokumentációban...
 
 ## 11. Telepítési terv
 
