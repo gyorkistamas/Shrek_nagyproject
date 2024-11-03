@@ -169,11 +169,21 @@ A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeke
 | Bejelentkezés érvényes adatokkal. | A rendszer sikeresen bejelentkezteti a felhasználót, és átirányítja a felhasználói főoldalra, ahol a profil és minden más egyéb elérhető. |
 | Bejelentkezés helytelen email címmel. | Az oldal értesíti a felhasználót, hogy a bejelentkezés sikertelen volt, és megjelenít egy hibaüzenetet: "Hibás email cím vagy jelszó." |
 | Bejelentkezés helytelen jelszóval. | Az oldal értesíti a felhasználót, hogy a bejelentkezés sikertelen volt, és megjelenít egy hibaüzenetet: "Hibás email cím vagy jelszó." |
-| Bejelentkezés üres mezőkkel. | A webldal értesíti a felhasználót, hogy a kötelező mezők kitöltése szükséges, megjelenítve a hibaüzenetet: "Kérjük, adja meg a/az felhasználónevet / email címet és a jelszót." |
+| Bejelentkezés üres mezőkkel. | A weboldal értesíti a felhasználót, hogy a kötelező mezők kitöltése szükséges, megjelenítve a hibaüzenetet: "Kérjük, adja meg a/az felhasználónevet / email címet és a jelszót." |
 
 További tesztelések folytatása egységesen a tesztelések dokumentációban...
 
 ## 11. Telepítési terv
+
+Először is telepítened kell a PHP-t (8.0+), a Composer-t, a Node.js-t (LTS), az Angular CLI-t és a MySQL-t.
+
+Itt található egy pár link a tökéletes működéshez:
+![Link](https://www.php.net/downloads)
+![Link](https://getcomposer.org/)
+![Link](https://nodejs.org/en/download/package-manager)
+![Link](https://v17.angular.io/cli)
+![Link](https://dev.mysql.com/downloads/installer/)
+
 
     
 ## 12. Karbantartási terv
