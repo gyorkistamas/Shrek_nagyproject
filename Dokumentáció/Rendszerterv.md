@@ -234,21 +234,29 @@ Nyisd meg a projektet terminálban (Visual Studio Code - Integrated Terminal), a
 ```
 
 Ezután futtassuk a migrációkat:
-- php artisan migrate
+```bash
+  php artisan migrate
+```
 
 (Angular mappa)
 Angular telepítése:
 ---
 Node.js csomagok telepítése:
-- npm install
+```bash
+  npm install
+```
 
 Projektek futtatása:
 
 Laravel:
-- php artisan serve
+```bash
+  php artisan serve
+```
 
 Angular:
-- ng serve
+```bash
+  ng serve
+```
 
 A Laravel API az http://localhost:8000, az Angular alkalmazás pedig a http://localhost:4200 címen érhető el.
 
