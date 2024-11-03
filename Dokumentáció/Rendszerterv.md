@@ -150,14 +150,14 @@ A weboldal elkészítéséhez Laravel keretrendszert használunk. Az adatbázist
 
 A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeket mindenki külön fájlban tárolja, pl. markdown fájlokban, excelben vagy wordben. Ezeket külön ID-val, rövid leírással, várt eredménnyel, kapott eredménnyel és megjegyzéssel látjuk el. 
 
-## 10.1 Tesztelési dokumentáció vezetése
+### 10.1 Tesztelési dokumentáció vezetése
 
 | ID | Rövid leírás | Várt eredmény | Kapott eredmény | Megjegyzés |
 | :---: | --- | --- | --- | --- |
 | TB_001 | Felhasználó bejelentkezés | A felhasználó hiba nélkül be tud jelentkezni | Sikeres bejelentkezés | Mindent rendben találtam |
 | TB_002 | Adminisztrátor bejelentkezés | Az adminisztrátor hiba nélkül be tud jelentkezni | Sikeres bejelentkezés | Mindent rendben találtam |
 
-## 10.2 Tesztesetek
+### 10.2 Tesztesetek
 
 | Teszt megnevezése | Elvárt eredmény |
 | :---: | --- |
