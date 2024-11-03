@@ -178,13 +178,38 @@ További tesztelések folytatása egységesen a tesztelések dokumentációban..
 Először is telepítened kell a PHP-t (8.0+), a Composer-t, a Node.js-t (LTS), az Angular CLI-t és a MySQL-t.
 
 Itt található egy pár link a tökéletes működéshez:
-![Link](https://www.php.net/downloads)
-![Link](https://getcomposer.org/)
-![Link](https://nodejs.org/en/download/package-manager)
-![Link](https://v17.angular.io/cli)
-![Link](https://dev.mysql.com/downloads/installer/)
+PHP:  https://www.php.net/downloads
+Composer:  https://getcomposer.org/
+Node.js:  https://nodejs.org/en/download/package-manager
+Angular CLI:  https://v17.angular.io/cli
+MySQL:  https://dev.mysql.com/downloads/installer/
 
+(Laravel mappa)
+Projekt letöltése, aztán Laravel telepítése:
 
+Nyisd meg a projektet terminálban, azután írd be ezeket:
+- composer install
+- copy .env.example .env
+- php artisan key:generate
+
+Ezután futtassuk a migrációkat:
+- php artisan migrate
+
+(Angular mappa)
+Angular telepítése:
+
+Node.js csomagok telepítése:
+- npm install
+
+Projektek futtatása:
+
+Laravel:
+- php artisan serve
+
+Angular:
+- ng serve
+
+A Laravel API az http://localhost:8000, az Angular alkalmazás pedig a http://localhost:4200 címen érhető el.
     
 ## 12. Karbantartási terv
 
