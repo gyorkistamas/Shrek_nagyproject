@@ -166,9 +166,12 @@ A tesztelést a fejlesztői csapat minden tagja elvégzi. Az kapott eredményeke
 | Regisztráció tesztelése kötelező mezők nélkül. | Az oldal értesíti a felhasználót, hogy a kötelező mezők kitöltése szükséges, megjelenítve a hibaüzenetet: "A név, email, jelszó mező kitöltése kötelező." |
 | Regisztráció tesztelése gyenge jelszóval. | Az oldal tájékoztat arról, hogy a jelszó gyenge, és megjelenít egy hibaüzenetet: "A jelszónak legalább 8 karakterből kell állnia, és tartalmaznia kell egy számot és egy speciális karaktert." |
 | Sikeres regisztráció érvényes adatokkal. | A weboldal sikeres regisztrációs üzenetet jelenít meg, és a felhasználó átirányításra kerül a bejelentkezési oldalra. |
-| Bejelentkezés sikeres érvényes adatokkal. | A rendszer sikeresen bejelentkezteti a felhasználót, és átirányítja a felhasználói főoldalra, ahol a profil és minden más egyéb elérhető. |
+| Bejelentkezés érvényes adatokkal. | A rendszer sikeresen bejelentkezteti a felhasználót, és átirányítja a felhasználói főoldalra, ahol a profil és minden más egyéb elérhető. |
 | Bejelentkezés helytelen email címmel. | Az oldal értesíti a felhasználót, hogy a bejelentkezés sikertelen volt, és megjelenít egy hibaüzenetet: "Hibás email cím vagy jelszó." |
+| Bejelentkezés helytelen jelszóval. | Az oldal értesíti a felhasználót, hogy a bejelentkezés sikertelen volt, és megjelenít egy hibaüzenetet: "Hibás email cím vagy jelszó." |
+| Bejelentkezés üres mezőkkel. | A webldal értesíti a felhasználót, hogy a kötelező mezők kitöltése szükséges, megjelenítve a hibaüzenetet: "Kérjük, adja meg a/az felhasználónevet / email címet és a jelszót." |
 
+| ...További tesztelések folytatása egységesen a tesztelések dokumentációban... |
 
 ## 11. Telepítési terv
 
