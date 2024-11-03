@@ -54,7 +54,15 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 - [ ] Adminisztrátor (Oktató)
    
 ### 3.2 Üzleti folyamatok
-
+- [ ] Bejelentkezés
+- [ ] Saját profil szerkesztése
+- [ ] Saját profil megtekintése
+- [ ] Levezetett órák megtekintése
+- [ ] Jelentkezés vizsgákra
+- [ ] Adminisztrátori bejelentkezés
+- [ ] Vezetési időpontok létrehozása
+- [ ] Profilok adatainak szerkesztése
+- [ ] Vizsgaidőpontok létrehozása
    
 ## 4. Követelmények
 
