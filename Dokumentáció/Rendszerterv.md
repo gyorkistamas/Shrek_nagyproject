@@ -219,6 +219,7 @@ Angular:
 - ng serve
 
 A Laravel API az http://localhost:8000, az Angular alkalmazás pedig a http://localhost:4200 címen érhető el.
----
+
 ## 12. Karbantartási terv
+
 
