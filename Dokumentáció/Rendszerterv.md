@@ -22,7 +22,6 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 * Backend:  
 	-   Kadlót Levente
 	-   Gál Szabolcs
-	-   
 * Tesztelés:   
 	-   Kadlót Levente
 	-   Gál Szabolcs
@@ -54,9 +53,10 @@ Az a felhasználó aki nincs felvéve csak általános információkat érhet el
 - [ ] Adminisztrátor (Oktató)
    
 ### 3.2 Üzleti folyamatok
+- [ ] Regisztráció
 - [ ] Bejelentkezés
-- [ ] Saját profil szerkesztése
 - [ ] Saját profil megtekintése
+- [ ] Saját profil szerkesztése
 - [ ] Levezetett órák megtekintése
 - [ ] Jelentkezés vizsgákra
 - [ ] Adminisztrátori bejelentkezés
@@ -223,9 +223,15 @@ MySQL:  https://dev.mysql.com/downloads/installer/
 Projekt letöltése, aztán Laravel telepítése:
 ---
 Nyisd meg a projektet terminálban (Visual Studio Code - Integrated Terminal), azután írd be ezeket:
-- composer install
-- copy .env.example .env
-- php artisan key:generate
+```bash
+  composer install
+```
+```bash
+  copy .env.example .env
+```
+```bash
+  php artisan key:generate
+```
 
 Ezután futtassuk a migrációkat:
 - php artisan migrate
