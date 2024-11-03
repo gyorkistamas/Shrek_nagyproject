@@ -62,7 +62,7 @@
 ## 8. Képernyőtervek
 
 ### Korai látványterv
-![korai_látványterv](../Img/memulatoralphfa.jpg)
+![korai_látványterv](../Dokumentáció/Képek/koraiterv.png)
 
 
 ## 9. Forgatókönyvek
