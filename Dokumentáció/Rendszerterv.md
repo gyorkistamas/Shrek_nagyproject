@@ -125,31 +125,28 @@ Laravel által szolgáltatott fejlesztői webszerver fejlesztés során, a kész
 
 ### 6.1 Fejlesztő eszközök
 
-- [ ] Kódszerkesztés:
+Kódszerkesztés:
 
-Visual Studio Code használata, népszerű és ingyenes kód szerkesztő, sok bővítménnyel, mint például a Laravel Blade, PHP Intelephense, Angular Language Service + leírónyelvek és keretrendszerek: pl. Laravel, Angular, PHP, HTML, CSS, JavaScript, BootStrap.
+- [ ] Visual Studio Code használata, népszerű és ingyenes kód szerkesztő, sok bővítménnyel, mint például a Laravel Blade, PHP Intelephense, Angular Language Service + leírónyelvek és keretrendszerek: pl. Laravel, Angular, PHP, HTML, CSS, JavaScript, BootStrap.
 
-- [ ] Verziókezelő rendszerek:
+Verziókezelő rendszerek:
 
- A kód változásainak nyomonkövetésére a GitHub használható, ez segít a távoli repository-kat kezelni és elérni.
+- [ ] A kód változásainak nyomonkövetésére a GitHub használható, ez segít a távoli repository-kat kezelni és elérni.
 
-- [ ] Csomagkezelők:
+Csomagkezelők:
 
-Composer (PHP csomagkezelő), amely lehetővé teszi a Laravel és egyéb PHP csomagok egyszerű telepítését és kezelését.
+- [ ] Composer (PHP csomagkezelő), amely lehetővé teszi a Laravel és egyéb PHP csomagok egyszerű telepítését és kezelését.
+- [ ] npm/yarn: Node.js csomagkezelők, amelyek Angular csomagok és függőségek kezelésére szolgálnak.
 
-npm/yarn: Node.js csomagkezelők, amelyek Angular csomagok és függőségek kezelésére szolgálnak.
+Adatbáziskezelők:
 
-- [ ] Adatbáziskezelők:
+- [ ] MySQL Workbench: Grafikus felület az adatbázisok kezelésére és a lekérdezések írására.
+- [ ] phpMyAdmin: Webalapú adatbázis-kezelő eszköz, amely segít az adatbázisok adminisztrálásában.
 
-MySQL Workbench: Grafikus felület az adatbázisok kezelésére és a lekérdezések írására.
+Dokumentációk és kommunikáció: 
 
-phpMyAdmin: Webalapú adatbázis-kezelő eszköz, amely segít az adatbázisok adminisztrálásában.
-
-- [ ] Dokumentációk és kommunikáció: 
-
-Trello: Projektmenedzsment eszközök a feladatok nyomon követésére és a csapatmunkára.
-
-Discord és Messenger használata a csoportos kommunikációhoz.
+- [ ] Trello: Projektmenedzsment eszközök a feladatok nyomon követésére és a csapatmunkára.
+- [ ] Discord és Messenger használata a csoportos kommunikációhoz.
 
 ### Hardver topológia
 
