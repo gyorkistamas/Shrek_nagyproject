@@ -19,11 +19,12 @@
 
 
 ## 4. Igényelt üzleti folyamatok modellje
-![utleti folyamatok](uzletifolyamatok_modelje.png)
+![tanuló hozzáadó felület](../Dokumentáció/Képek/uzletifolyamatok_modelje.png)
 
 ## 5. Követelménylista
 
-| ID | Modul | Név | Kifejtés |
+| Id | Modul | Név | Kifejtés |
+| :---: | --- | --- | --- |
 | K1 | Főoldal| fő lap | A weboldal fő lapja ahol információk érhetőek el és ide kerül a látogató a weboldal felkeresésekor |
 | K2 | Bejelentkezés | Bejelentkezési lap | Bejelentkező felület |
 | K3 | Regisztráció | Regisztrációs lap | Regisztrációs felület látogatóknak. |
