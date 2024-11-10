@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout style="background-image: url('images/hatter.jpg'); background-position: center; background-attachment: fixed; background-size: cover; height: 100vh; width: 100%;">>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
