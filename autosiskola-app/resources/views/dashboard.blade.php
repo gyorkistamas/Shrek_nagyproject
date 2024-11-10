@@ -1,24 +1,31 @@
+@extends('layouts.app')
 
+@section('content')
+<div class="py-12">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="p-6 bg-gray-100">
+                <h2 class="text-2xl font-bold text-gray-800">Üdvözöljük a Dashboard-on!</h2>
+                <p class="mt-4 text-lg text-gray-600">Itt láthatja a felhasználói információkat és az alkalmazás főbb funkcióit.</p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    @auth
-        <h1>Szia, {{ Auth::user()->name }}!</h1>
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
-            @method('POST')
-            <button type="submit">Kijelentkezés</button>
-        </form>
-    @else
-        <h1>Welcome to the Dashboard!</h1>
-        <p>Please <a href="{{ route('login') }}">login</a> to access your account.</p>
-        <p>If you don't have an account, you can <a href="{{ route('register') }}">register here</a>.</p>
-    @endauth
-</body>
-</html>
+                <!-- Felhasználói adatok -->
+                <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
+                    <h3 class="text-xl font-medium text-gray-700">Felhasználói Adatok:</h3>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-600"><strong>ID:</strong> {{ Auth::user()->id }}</p>
+                        <p class="text-sm text-gray-600"><strong>Név:</strong> {{ Auth::user()->name }}</p>
+                        <p class="text-sm text-gray-600"><strong>Email:</strong> {{ Auth::user()->email }}</p>
+                        <p class="text-sm text-gray-600"><strong>Regisztrálva:</strong> {{ Auth::user()->created_at->format('Y-m-d') }}</p>
+                    </div>
+                </div>
+                
+                <!-- Aktivitások vagy egyéb információk -->
+                <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
+                    <h3 class="text-xl font-medium text-gray-700">Aktivitás:</h3>
+                    <p class="text-gray-600 mt-2">Itt jeleníthet meg különböző aktivitásokat, statisztikákat, és egyéb információkat, amelyek az alkalmazás funkcionalitásához tartoznak.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 
 Route::get('/register', [RegisteredUserController::class, 'create'])
@@ -12,11 +13,9 @@ Route::get('/register', [RegisteredUserController::class, 'create'])
 Route::post('/register', [RegisteredUserController::class, 'store'])
     ->middleware('guest');
 
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])
     ->middleware('guest')
@@ -33,6 +32,13 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
     ->middleware('auth')
     ->name('logout');
+
+    Route::middleware('auth')->group(function () {
+        // Profil szerkesztése
+        Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+        // Profil mentése (PUT kéréssel)
+        Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    });
 
     // web.php
 Route::get('/register', [RegisteredUserController::class, 'create'])->middleware('guest')->name('register');

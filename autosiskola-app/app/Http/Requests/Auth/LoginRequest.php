@@ -32,6 +32,14 @@ class LoginRequest extends FormRequest
         ];
     }
 
+    public function show()
+{
+    $user = Auth::user();
+    $userName = ($user && $user->name) ? $user->name : 'A felhasználó nem található vagy a név hiányzik.';
+
+    return view('welcome', compact('userName'));
+}
+
     /**
      * Attempt to authenticate the request's credentials.
      *

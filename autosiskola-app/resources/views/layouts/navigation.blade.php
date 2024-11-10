@@ -5,26 +5,44 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
-                    </a>
-                </div>
+        <!-- Főoldal hivatkozás -->
+        <a href="{{ url('/') }}" style="margin-right: 10px;" >
+            <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+        </a>
+    </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
+            <!-- Navigation Links 
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                Dashboard hivatkozás 
+                <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    {{ __('Dashboard') }}
+                </x-nav-link>
+
+            </div>-->
+
+             <!-- Regisztráció Link -->
+                <x-nav-link :href="route('register')" :active="request()->routeIs('register')">
+                    {{ __('Regisztráció') }}
+                </x-nav-link>
             </div>
+
+            <!-- Bejelentkezés Link -->
+            <x-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                    {{ __('Bejelentkezés') }}
+                </x-nav-link>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
-                            <div>{{ Auth::user()->name }}</div>
-
+                        <div>
+                            @if (Auth::check())
+                                {{ Auth::user()->name }}
+                            @else
+                                Vendég
+                            @endif
+                        </div>
                             <div class="ms-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -45,7 +63,7 @@
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('Kijelentkezés') }}
                             </x-dropdown-link>
                         </form>
                     </x-slot>
@@ -66,17 +84,37 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+    <div class="pt-2 pb-3 space-y-1">
+        <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+            {{ __('Dashboard') }}
+        </x-responsive-nav-link>
+        
+        <!-- Regisztráció Link -->
+        <x-responsive-nav-link :href="route('register')" :active="request()->routeIs('register')">
+            {{ __('Regisztráció') }}
+        </x-responsive-nav-link>
+
+        <!-- Bejelentkezés Link -->
+        <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                {{ __('Bejelentkezés') }}
             </x-responsive-nav-link>
-        </div>
+    </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
-                <div class="font-medium text-base text-gray-800 dark:text-gray-200">{{ Auth::user()->name }}</div>
-                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                <div class="font-medium text-base text-gray-800 dark:text-gray-200">
+                            @if (Auth::check())
+                                {{ Auth::user()->name }}
+                            @else
+                                Vendég
+                            @endif</div>
+                <div class="font-medium text-sm text-gray-500">
+                            @if (Auth::check())
+                                {{ Auth::user()->email }}
+                            @else
+                                Vendég
+                            @endif</div>
             </div>
 
             <div class="mt-3 space-y-1">
@@ -88,10 +126,10 @@
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
-                    <x-responsive-nav-link :href="route('logout')"
-                            onclick="event.preventDefault();
-                                        this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                    <!-- A gomb kattintásakor az esemény megakadályozza az alapértelmezett link navigációját és a formot küldi -->
+                    <x-responsive-nav-link href="#" 
+                        onclick="event.preventDefault(); this.closest('form').submit();">
+                        {{ __('Kijelentkezés') }}
                     </x-responsive-nav-link>
                 </form>
             </div>
