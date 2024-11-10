@@ -10,7 +10,7 @@
 
                 <!-- Felhasználói adatok -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
-                    <h3 class="text-xl font-medium text-gray-700">Felhasználói Adatok:</h3>
+                    <h3 class="text-xl font-medium text-gray-700">Felhasználói adatok:</h3>
                     <div class="mt-4">
                         <p class="text-sm text-gray-600"><strong>ID:</strong> {{ Auth::user()->id }}</p>
                         <p class="text-sm text-gray-600"><strong>Név:</strong> {{ Auth::user()->name }}</p>

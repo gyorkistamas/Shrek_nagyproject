@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 
@@ -40,5 +41,4 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
         Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
     });
 
-    // web.php
 Route::get('/register', [RegisteredUserController::class, 'create'])->middleware('guest')->name('register');
