@@ -7,7 +7,10 @@
             <div class="p-6 bg-gray-100">
                 <h2 class="text-2xl font-bold text-gray-800">Üdvözöljük a Dashboard-on!</h2>
                 <p class="mt-4 text-lg text-gray-600">Itt láthatja a felhasználói információkat és az alkalmazás főbb funkcióit.</p>
-
+            <div class="p-6 bg-gray-100">
+                <img src="{{ asset('images/user.png') }}" style="width: 150px; margin: 0 auto 0 auto;" alt="Logo">
+                <p style="text-align: center; font-size: 20px; padding-top: 5px;">Szia, {{ Auth::user()->name }}!</p>
+            </div>
                 <!-- Felhasználói adatok -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Felhasználói adatok:</h3>
@@ -18,7 +21,7 @@
                         <p class="text-sm text-gray-600"><strong>Regisztrálva:</strong> {{ Auth::user()->created_at->format('Y-m-d') }}</p>
                     </div>
                 </div>
-                
+
                 <!-- Aktivitások vagy egyéb információk -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Aktivitás:</h3>

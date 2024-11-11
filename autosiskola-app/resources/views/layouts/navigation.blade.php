@@ -7,13 +7,14 @@
                 <div class="shrink-0 flex items-center">
         <!-- Főoldal hivatkozás -->
         <a href="{{ url('/') }}" style="margin-right: 10px;" >
-            <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+            <!---<x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />--->
+            <img src="{{ asset('images/auto.png') }}" alt="Logo">
         </a>
     </div>
 
-            <!-- Navigation Links 
+            <!-- Navigation Links
             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                Dashboard hivatkozás 
+                Dashboard hivatkozás
                 <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     {{ __('Dashboard') }}
                 </x-nav-link>
@@ -88,7 +89,7 @@
         <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
             {{ __('Dashboard') }}
         </x-responsive-nav-link>
-        
+
         <!-- Regisztráció Link -->
         <x-responsive-nav-link :href="route('register')" :active="request()->routeIs('register')">
             {{ __('Regisztráció') }}
@@ -127,7 +128,7 @@
                     @csrf
 
                     <!-- A gomb kattintásakor az esemény megakadályozza az alapértelmezett link navigációját és a formot küldi -->
-                    <x-responsive-nav-link href="#" 
+                    <x-responsive-nav-link href="#"
                         onclick="event.preventDefault(); this.closest('form').submit();">
                         {{ __('Kijelentkezés') }}
                     </x-responsive-nav-link>
