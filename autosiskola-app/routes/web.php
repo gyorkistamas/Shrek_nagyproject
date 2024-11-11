@@ -41,4 +41,9 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
         Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
     });
 
+    Route::get('/', function () {
+        return redirect()->route('dashboard');
+    });
+
+
 Route::get('/register', [RegisteredUserController::class, 'create'])->middleware('guest')->name('register');
