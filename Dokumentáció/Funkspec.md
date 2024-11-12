@@ -1,29 +1,28 @@
 # Funkcionális Specifikáció
 ## 1. Jelenlegi helyzet
-    Az autósiskola, amely az ügyfeleink közé tartozik, kiemelt figyelmet fordít a modern vezetési oktatásra és a tanulók igényeinek megértésére. Jelenleg számos online oktatási portált és blogot üzemeltet, ahol friss híreket és hasznos tanácsokat osztanak meg a biztonságos közlekedésről. Különböző médiafelületeken keresztül gyűjtik a tanulók visszajelzéseit, hogy szolgáltatásaikat tovább fejleszthessék, valamint weboldalukon ösztönzik a diákokat a véleménynyilvánításra.
+Az autósiskola, amely az ügyfeleink közé tartozik, kiemelt figyelmet fordít a modern vezetési oktatásra és a tanulók igényeinek megértésére. Jelenleg számos online oktatási portált és blogot üzemeltet, ahol friss híreket és hasznos tanácsokat osztanak meg a biztonságos közlekedésről. Különböző médiafelületeken keresztül gyűjtik a tanulók visszajelzéseit, hogy szolgáltatásaikat tovább fejleszthessék, valamint weboldalukon ösztönzik a diákokat a véleménynyilvánításra.
 
-    Az autósiskola megbízott minket egy vezetési ismeretekhez szükséges portál lértehozásával. A rendszer forráskódja a megrendelő tulajdonába kerül, és fontos szempont, hogy a későbbiekben könnyen bővíthető legyen. Az oldalt a megrendelő fogja működtetni, függetlenül a fejlesztői csapattól.
+Az autósiskola megbízott minket egy vezetési ismeretekhez szükséges portál lértehozásával. A rendszer forráskódja a megrendelő tulajdonába kerül, és fontos szempont, hogy a későbbiekben könnyen bővíthető legyen. Az oldalt a megrendelő fogja működtetni, függetlenül a fejlesztői csapattól.
 
 
 ## 2. Vágyálom rendszer
-    Az autóiskola projekt egy Laravel keretrendszerben készül, amely adatbázis-alapú megoldást kínál a tanulók és oktatók adminisztrációs feladatainak kezelésére. 
-    A rendszer lehetőséget biztosít arra, hogy felhasználók (tanulóként), oktatóként jelentkezzenek be.
+Az autóiskola projekt egy Laravel keretrendszerben készül, amely adatbázis-alapú megoldást kínál a tanulók és oktatók adminisztrációs feladatainak kezelésére. 
+A rendszer lehetőséget biztosít arra, hogy felhasználók (tanulóként), oktatóként jelentkezzenek be.
 
-    Tanulóként a felhasználók hozzáférhetnek a levezetett órákhoz, szerkeszthetik a profiluk, követhetik előrehaladásukat különböző fokozatokban (kezdő / haladó), 
-    és vizsgajelentkezéseket adhatnak le. Az oktatók, teljes körű adminisztratív jogosultságokkal rendelkeznek: új vizsgákat írhatnak ki, vezetési időpontokat hozhatnak létre vagy módosíthatnak, 
-    és kezelhetik a tanulók adatait és viszgaidőpontokat írhatnak.
+Tanulóként a felhasználók hozzáférhetnek a levezetett órákhoz, szerkeszthetik a profiluk, követhetik előrehaladásukat különböző fokozatokban (kezdő / haladó), 
+és vizsgajelentkezéseket adhatnak le. Az oktatók, teljes körű adminisztratív jogosultságokkal rendelkeznek: új vizsgákat írhatnak ki, vezetési időpontokat hozhatnak létre vagy módosíthatnak, és kezelhetik a tanulók adatait és viszgaidőpontokat írhatnak.
 
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 
-    A weboldal forrása az autósiskolát fogja illetni, és igényként szerepel annak további bővítési lehetősége is. 
-    Elvárás, hogy a kód alapja könnyen újra felhasználható és alapként szolgálhasson a jövőbeli fejlesztésekhez. 
-    Az oldal működtetését az autósiskola saját magának fogja végezni, így fontos, hogy a weboldal karbantartásához és moderálásához nem programozói háttérrel rendelkező személyeket terveznek kinevezni. Ennek megfelelően a tervezés és kivitelezés során kulcsfontosságú szempont, hogy minden felmerülő CRUD (Create, Read, Update, Delete) művelethez grafikus felületet biztosítsunk, amely felhasználóbarát és könnyen navigálható. 
+A weboldal forrása az autósiskolát fogja illetni, és igényként szerepel annak további bővítési lehetősége is. 
+Elvárás, hogy a kód alapja könnyen újra felhasználható és alapként szolgálhasson a jövőbeli fejlesztésekhez. 
+Az oldal működtetését az autósiskola saját magának fogja végezni, így fontos, hogy a weboldal karbantartásához és moderálásához nem programozói háttérrel rendelkező személyeket terveznek kinevezni. Ennek megfelelően a tervezés és kivitelezés során kulcsfontosságú szempont, hogy minden felmerülő CRUD (Create, Read, Update, Delete) művelethez grafikus felületet biztosítsunk, amely felhasználóbarát és könnyen navigálható. 
     
-    A projekt során figyelembe kell venni, hogy az oldal adatbázis-kezelése megfelelően tervezett legyen, megfelelve a szakmai normáknak és az adatbányászati céloknak. 
-    A szükséges adatbázis-struktúrákat és relációkat a jövőbeli bővítések figyelembevételével kell kialakítani, lehetővé téve a rugalmas adathasználatot és -kezelést.
+A projekt során figyelembe kell venni, hogy az oldal adatbázis-kezelése megfelelően tervezett legyen, megfelelve a szakmai normáknak és az adatbányászati céloknak. 
+A szükséges adatbázis-struktúrákat és relációkat a jövőbeli bővítések figyelembevételével kell kialakítani, lehetővé téve a rugalmas adathasználatot és -kezelést.
 
-    A projekt megvalósítására három hónap áll rendelkezésre, amely alatt a tervezési fázistól a megvalósításig, valamint a tesztelési szakaszig minden lépést alaposan meg kell tervezni és végrehajtani a sikeres bevezetés érdekében.
+A projekt megvalósítására három hónap áll rendelkezésre, amely alatt a tervezési fázistól a megvalósításig, valamint a tesztelési szakaszig minden lépést alaposan meg kell tervezni és végrehajtani a sikeres bevezetés érdekében.
 
 ## 4. Igényelt üzleti folyamatok modellje
 ![tanuló hozzáadó felület](../Dokumentáció/Képek/uzletifolyamatok_modelje.png)
@@ -42,9 +41,9 @@
 
 
 ## 6. Használati esetek
-    A felhasználók (tanulók és oktatók) bejelentkezhetnek a rendszerbe és tanulóként vizsgákat vehetnek fel, 
-    vezetési időpontokat foglalhatnak le és szerkeszhetik a profiljukat sikeres jogosítvány szerzés segítésére. 
-    Az oktatók vizsgákat, vezetési időpontokat adhatnak meg és szerkeszthetnek, profilopkat szerkeszthetnek. 
+A felhasználók (tanulók és oktatók) bejelentkezhetnek a rendszerbe és tanulóként vizsgákat vehetnek fel, 
+vezetési időpontokat foglalhatnak le és szerkeszhetik a profiljukat sikeres jogosítvány szerzés segítésére. 
+Az oktatók vizsgákat, vezetési időpontokat adhatnak meg és szerkeszthetnek, profilopkat szerkeszthetnek. 
 
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
