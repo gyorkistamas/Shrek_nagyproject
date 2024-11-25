@@ -13,7 +13,7 @@
             </div>
         @endif
 
-        <!-- Profile update form -->
+        <h2><b>Amit nem akar megváltoztatni, hagyja szabadon</b></h2>
         <form method="POST" action="{{ route('profile.update') }}">
             @csrf
             @method('PUT')
@@ -35,7 +35,7 @@
             </div>
 
             <div class="mb-4">
-                <label for="password" class="block text-sm font-medium text-gray-700">Új jelszó (Ne használd a jelenlegi jelszavadtól...)</label>
+                <label for="password" class="block text-sm font-medium text-gray-700">Új jelszó</label>
                 <input type="password" name="password" id="password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
                 @error('password')
                     <div class="text-sm text-red-500 mt-1">{{ $message }}</div>

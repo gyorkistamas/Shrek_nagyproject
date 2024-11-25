@@ -12,6 +12,7 @@ class CreateAutosiskolaTables extends Migration
             $table->bigInteger('felhasznalo')->primary();
             $table->string('email', 200);
             $table->string('jelszo', 100)->unique();
+            $table->timestamps();
         });
 
         Schema::create('jarmuvek', function (Blueprint $table) {
