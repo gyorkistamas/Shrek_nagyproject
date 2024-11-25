@@ -28,7 +28,7 @@
                             {{ __('Dashboard') }}
                         </x-nav-link>
                         <x-nav-link :href="route('edit')" :active="request()->routeIs('edit')">
-                            {{ __('Edit') }}
+                            {{ __('Felhasználó adatok szerkesztése') }}
                         </x-nav-link>
                     @endauth
                 </div>
