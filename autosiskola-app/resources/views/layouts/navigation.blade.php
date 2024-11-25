@@ -27,6 +27,9 @@
                         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                             {{ __('Dashboard') }}
                         </x-nav-link>
+                        <x-nav-link :href="route('edit')" :active="request()->routeIs('edit')">
+                            {{ __('Edit') }}
+                        </x-nav-link>
                     @endauth
                 </div>
             </div>
