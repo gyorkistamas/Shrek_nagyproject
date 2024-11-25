@@ -13,7 +13,7 @@
     @endif
 
     <!-- Profile update form -->
-    <form method="PUT" action="{{ route('profile.update') }}">
+    <form method=@method('PUT') action="{{ route('profile.update') }}">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
