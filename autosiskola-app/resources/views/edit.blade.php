@@ -13,7 +13,7 @@
             </div>
         @endif
 
-        <h2>Amit nem akar megváltoztatni, hagyja szabadon</h2>
+        <h2><b>Amit nem akar megváltoztatni, hagyja szabadon</b></h2>
         <form method="POST" action="{{ route('profile.update') }}">
             @csrf
             @method('PUT')
