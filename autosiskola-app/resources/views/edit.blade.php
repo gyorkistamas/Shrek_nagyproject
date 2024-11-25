@@ -12,6 +12,16 @@
                 A felhasználói adat sikeresen frissítve!
             </div>
         @endif
+    <!-- Profile update form -->
+    <form method=@method('PUT') action="{{ route('profile.update') }}">
+        @csrf
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="{{'name'}}">
+            @error('name')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
 
         <!-- Profile update form -->
         <form method="POST" action="{{ route('profile.update') }}">
