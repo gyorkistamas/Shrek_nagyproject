@@ -17,20 +17,24 @@ class AuthenticatedSessionController extends Controller
 
 
     public function store(Request $request)
-    {
-        $request->validate([
-            'email' => 'required|email',
-            'password' => 'required|string',
-        ]);
+{
+    $request->validate([
+        'email' => 'required|email',
+        'password' => 'required|string',
+    ]);
 
-        if (Auth::attempt($request->only('email', 'password'), $request->remember)) {
-            return redirect()->intended(route('dashboard'));
-        }
+    $user = \App\Models\User::where('email', $request->email)->first();
 
-        return back()->withErrors([
-            'email' => 'Az adatok nem egyeznek...',
-        ]);
+    if ($user && Hash::check($request->password, $user->jelszo)) {
+        Auth::login($user, $request->remember);
+        return redirect()->intended(route('dashboard'));
     }
+
+    return back()->withErrors([
+        'email' => 'Az adatok nem egyeznek...',
+    ]);
+}
+
 
 
     public function destroy(Request $request)
