@@ -67,7 +67,7 @@ class CreateAutosiskolaTables extends Migration
             $table->string('szemelyi', 8);
             $table->integer('adoszam');
             $table->date('szulido');
-            $table->integer('szulhely');
+            $table->string('szulhely');
             $table->boolean('elsosegelyvizsga');
             $table->boolean('szemuveg');
         });
