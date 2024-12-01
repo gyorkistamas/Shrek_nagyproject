@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use Hash;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,15 +27,21 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        $validated = $request->validate([
+            'name' => 'nullable|string|max:255',
+            'email' => 'nullable|string|email|max:255|unique:users,email,' . auth()->id(),
+            'password' => 'nullable|string|min:8|confirmed',
+        ]);
+        $user = auth()->user();
+        $user->name = $validated['name'];
+        $user->email = $validated['email'];
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
+        if (!empty($validated['password'])) {
+            $user->password = Hash::make($validated['password']);
         }
 
-        $request->user()->save();
-
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        $user->save();
+        return redirect()->back()->with('success', 'Profile updated successfully.');
     }
 
     /**
