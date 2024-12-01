@@ -20,7 +20,7 @@
 
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Név</label>
-                <input type="text" name="name" id="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your name" value="{{ old('name', auth()->user()->name) }}">
+                <input type="text" name="name" id="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="{{ old('name', auth()->user()->name) }}">
                 @error('name')
                     <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
                 @enderror
@@ -28,7 +28,7 @@
 
             <div class="mb-4">
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your email" value="{{ old('email', auth()->user()->email) }}">
+                <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="{{ old('email', auth()->user()->email) }}">
                 @error('email')
                     <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
                 @enderror
