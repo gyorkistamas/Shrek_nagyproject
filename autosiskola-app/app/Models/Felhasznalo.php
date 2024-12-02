@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class felhasznalo extends Model
+class Felhasznalo extends Model
 {
     public $timestamps = false;
     protected $table = 'felhasznalo';
