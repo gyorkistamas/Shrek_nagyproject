@@ -1,6 +1,5 @@
-### Bejelentkezés / regisztráció tesztelése
 
-**Tesztelő:** Teszt Elek
+**Tesztelő:** Kadlót Levente Dániel
 
 **Tesztelés dátuma:** 2022.10.09
 
@@ -10,8 +9,6 @@
 | ASD_001 | Regisztráció esetén mezők hiányos kitöltése. | Az oldal figyelmeztet a hiányosságokra. | Megegyzik a várt eredménnyel. | Nem találtam hibát. |
 
 &nbsp;
-
-### Termék hozzáadása tesztelése
 
 **Tesztelő:** Teszt Elek
 
