@@ -62,9 +62,9 @@ class CreateAutosiskolaTables extends Migration
         });
 
         Schema::create('felhasznalo', function (Blueprint $table) {
-            $table->bigInteger('id')->primary();
+            $table->bigInteger('id');
             $table->string('nev', 200);
-            $table->integer('taj');
+            $table->integer('taj')->primary();
             $table->string('szemelyi', 8);
             $table->integer('adoszam');
             $table->date('szulido');
