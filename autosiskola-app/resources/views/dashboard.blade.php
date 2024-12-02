@@ -11,7 +11,6 @@
                 <img src="{{ asset('images/user.png') }}" style="width: 150px; margin: 0 auto 0 auto;" alt="Logo">
                 <p style="text-align: center; font-size: 20px; padding-top: 5px;">Szia, {{ $felhasznalo->nev }}!</p>
             </div>
-                <!-- Felhasználói adatok -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Felhasználói adatok:</h3>
                     <div class="mt-4">
