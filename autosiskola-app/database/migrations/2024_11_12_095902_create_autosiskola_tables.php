@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB; // Szükséges az adatbázisműveletekhez
 
 class CreateAutosiskolaTables extends Migration
 {
@@ -71,6 +72,32 @@ class CreateAutosiskolaTables extends Migration
             $table->boolean('elsosegelyvizsga');
             $table->boolean('szemuveg');
         });
+
+
+        DB::table('felhasznalo')->insert([
+            'id' => 1,
+            'nev' => 'admin',
+            'taj' => 123456789,
+            'szemelyi' => 'AA123456',
+            'adoszam' => 12345678,
+            'szulido' => '1980-01-01',
+            'szulhely' => 'Budapest',
+            'elsosegelyvizsga' => true,
+            'szemuveg' => false,
+        ]);
+
+        DB::table('bejelentkezes')->insert([
+            'felhasznalo' => 1,
+            'email' => 'admin@autosiskola.hu',
+            'jelszo' => bcrypt('admin'),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('szerepek')->insert([
+            'roleID' => 2,
+            'szerepnev' => 'Admin',
+        ]);
     }
 
     public function down()
