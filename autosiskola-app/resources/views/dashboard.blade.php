@@ -9,15 +9,31 @@
                 <p class="mt-4 text-lg text-gray-600">Itt láthatja a felhasználói információkat és az alkalmazás főbb funkcióit.</p>
             <div class="p-6 bg-gray-100">
                 <img src="{{ asset('images/user.png') }}" style="width: 150px; margin: 0 auto 0 auto;" alt="Logo">
-                <p style="text-align: center; font-size: 20px; padding-top: 5px;">Szia, {{ Auth::user()->felhasznalo }}!</p>
+                <p style="text-align: center; font-size: 20px; padding-top: 5px;">Szia, {{ $felhasznalo->nev }}!</p>
             </div>
                 <!-- Felhasználói adatok -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Felhasználói adatok:</h3>
                     <div class="mt-4">
-                        <p class="text-sm text-gray-600"><strong>Név:</strong> {{ Auth::user()->felhasznalo }}</p>
+                        <p class="text-sm text-gray-600"><strong>Név:</strong> {{ $felhasznalo->nev }}</p>
                         <p class="text-sm text-gray-600"><strong>Email:</strong> {{ Auth::user()->email }}</p>
                         <p class="text-sm text-gray-600"><strong>Regisztrálva:</strong> {{ Auth::user()->created_at->format('Y-m-d') }}</p>
+                        <p class="text-sm text-gray-600"><strong>Taj szám:</strong> {{ $felhasznalo->taj }}</p>
+                        <p class="text-sm text-gray-600"><strong>Személyi azonosító:</strong> {{ $felhasznalo->szemelyi }}</p>
+                        <p class="text-sm text-gray-600"><strong>Adószám:</strong> {{ $felhasznalo->adoszam }}</p>
+                        <p class="text-sm text-gray-600"><strong>Születési idő:</strong> {{ $felhasznalo->szulido }}</p>
+                        <p class="text-sm text-gray-600"><strong>Születési hely:</strong> {{ $felhasznalo->szulhely }}</p>
+                        @if ($felhasznalo->elsosegelyvizsga == 1)
+                        <p class="text-sm text-gray-600"><strong>Elsősegélyvizsga:</strong> Megszerezve</p>
+                        @else
+                        <p class="text-sm text-gray-600"><strong>Elsősegélyvizsga:</strong> Még nincs megszerezve</p>
+                        @endif
+                        @if ($felhasznalo->elsosegelyvizsga == 1)
+                        <p class="text-sm text-gray-600"><strong>Szemüveg:</strong> Szemüveges</p>
+                        @else
+                        <p class="text-sm text-gray-600"><strong>Elsősegélyvizsga:</strong> Nem Szemüveges</p>
+                        @endif
+                        
                     </div>
                 </div>
 
