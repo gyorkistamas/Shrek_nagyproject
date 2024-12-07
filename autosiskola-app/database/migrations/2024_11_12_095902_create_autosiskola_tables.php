@@ -88,14 +88,14 @@ class CreateAutosiskolaTables extends Migration
 
         DB::table('bejelentkezes')->insert([
             'felhasznalo' => 1,
-            'email' => 'admin@autosiskola.hu',
+            'email' => 'admin@admin',
             'jelszo' => bcrypt('admin'),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         DB::table('szerepek')->insert([
-            'roleID' => 2,
+            'roleID' => 3,
             'szerepnev' => 'Admin',
         ]);
     }
