@@ -47,3 +47,14 @@ Route::middleware('auth')->group(function () {
 Route::get('/', function () {
     return redirect()->route('dashboard');
 });
+
+
+
+
+use App\Http\Controllers\UserManagementController;
+Route::middleware('auth')->group(function () {
+    Route::get('/users', [UserManagementController::class, 'index'])->name('users.index');
+    Route::get('/users/edit/{taj}', [UserManagementController::class, 'edit'])->name('users.edit');
+    Route::post('/users/update/{taj}', [UserManagementController::class, 'update'])->name('users.update');
+});
+

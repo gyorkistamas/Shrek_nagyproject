@@ -30,6 +30,13 @@
                         <x-nav-link :href="route('edit')" :active="request()->routeIs('edit')">
                             {{ __('Felhasználó adatok szerkesztése') }}
                         </x-nav-link>
+
+                        @auth
+                        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                            {{ __('Felhasználók kezelése') }}
+                        </x-nav-link>
+                        @endauth
+
                     @endauth
                 </div>
             </div>
