@@ -98,6 +98,31 @@ class CreateAutosiskolaTables extends Migration
             'roleID' => 3,
             'szerepnev' => 'Admin',
         ]);
+
+        DB::table('felhasznalo')->insert([
+            'id' => 1,
+            'nev' => 'Test User',
+            'taj' => 123456389,
+            'szemelyi' => 'AA123455',
+            'adoszam' => 12145678,
+            'szulido' => '1980-01-01',
+            'szulhely' => 'Budapest',
+            'elsosegelyvizsga' => true,
+            'szemuveg' => true,
+        ]);
+
+        DB::table('bejelentkezes')->insert([
+            'felhasznalo' => 2,
+            'email' => 'test@test',
+            'jelszo' => bcrypt('test'),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('szerepek')->insert([
+            'roleID' => 2,
+            'szerepnev' => 'User',
+        ]);
     }
 
     public function down()
