@@ -13,22 +13,22 @@
             </div>
         @endif
 
-        <h2><b>Amit nem akar megváltoztatni, hagyja szabadon</b></h2>
+        <h2><b>Amit nem akar megváltoztatni, az hagyja az alapértelmezett értékén</b></h2>
         <form method="POST" action="{{ route('profile.update') }}">
             @csrf
             @method('PUT')
 
             <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-700">Név</label>
-                <input type="text" name="name" id="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="{{ $felhasznalo->nev}}">
-                @error('name')
+                <label for="nev" class="block text-sm font-medium text-gray-700">Név</label>
+                <input type="text" name="nev" id="nev" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="{{ $felhasznalo->nev}}>
+                @error('nev')
                     <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
                 @enderror
             </div>
 
             <div class="mb-4">
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="{{ auth()->user()->email }}">
+                <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" value="{{ old('email', auth()->user()->email) }}">
                 @error('email')
                     <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
                 @enderror
@@ -64,11 +64,30 @@
                     <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
                 @enderror
             </div>
-
+            
             <div class="mb-6">
                 <label for="password_confirmation" class="block text-sm font-medium text-gray-700">Új jelszó megerősítése</label>
                 <input type="password" name="password_confirmation" id="password_confirmation" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
             </div>
+            <div class="mb-6">
+                @if ($felhasznalo->elsosegelyvizsga == 1)
+                    <label for="elsosegely" class="block text-sm font-medium text-gray-700">Elsősegélyvizsga</label>
+                    <input type="checkbox" checked name="elsosegely" id="elsosegely" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                @else
+                    <label for="elsosegely" class="block text-sm font-medium text-gray-700">Elsősegélyvizsga</label>
+                    <input type="checkbox" name="elsosegely" id="elsosegely" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                @endif
+            </div>
+            <div class="mb-6">
+                @if ($felhasznalo->szemuveg == 1)
+                    <label for="szemuveg" class="block text-sm font-medium text-gray-700">Szemüveg</label>
+                    <input type="checkbox" checked name="szemuveg" id="szemuveg" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                @else
+                    <label for="szemuveg" class="block text-sm font-medium text-gray-700">Szemüveg</label>
+                    <input type="checkbox" name="szemuveg" id="szemuveg" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                @endif
+            </div>
+            
 
             <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
                 Mentés
