@@ -27,10 +27,10 @@
                         @else
                         <p class="text-sm text-gray-600"><strong>Elsősegélyvizsga:</strong> Még nincs megszerezve</p>
                         @endif
-                        @if ($felhasznalo->elsosegelyvizsga == 1)
+                        @if ($felhasznalo->szemuveg == 1)
                         <p class="text-sm text-gray-600"><strong>Szemüveg:</strong> Szemüveges</p>
                         @else
-                        <p class="text-sm text-gray-600"><strong>Elsősegélyvizsga:</strong> Nem Szemüveges</p>
+                        <p class="text-sm text-gray-600"><strong>Szemüveg:</strong> Nem Szemüveges</p>
                         @endif
                         
                     </div>
@@ -38,8 +38,8 @@
 
                 <!-- Aktivitások vagy egyéb információk -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
-                    <h3 class="text-xl font-medium text-gray-700">Aktivitás:</h3>
-                    <p class="text-gray-600 mt-2">Itt jeleníthet meg különböző aktivitásokat, statisztikákat, és egyéb információkat, amelyek az alkalmazás funkcionalitásához tartoznak.</p>
+                    <h3 class="text-xl font-medium text-gray-700">Ide jönnek majd a vizsgák és órák holnap:</h3>
+                    <p class="text-gray-600 mt-2"></p>
                 </div>
             </div>
         </div>
