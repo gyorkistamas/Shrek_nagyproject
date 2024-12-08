@@ -20,12 +20,12 @@ class VizsgaController extends Controller
     public function index()
     {
         $vizsga = Vizsga::all();
-        return view('vizsga.index', compact('vizsga'));
+        return view('vizsgak.index', compact('vizsga'));
     }
 
     public function create()
     {
-        return view('vizsga.create');
+        return view('vizsgak.create');
     }
 
     public function store(Request $request)
@@ -46,7 +46,7 @@ class VizsgaController extends Controller
     public function edit($vizsgaID)
     {
         $ora = Vizsga::findOrFail($vizsgaID);
-        return view('vizsga.edit', compact('vizsga'));
+        return view('vizsgak.edit', compact('vizsga'));
     }
 
     public function update(Request $request, $vizsgaID)

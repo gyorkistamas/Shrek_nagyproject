@@ -4,20 +4,25 @@
 <div class="py-12" style="background-image: url('images/hatter.jpg'); background-position: center; background-attachment: fixed; background-size: cover; height: 100vh; width: 100%;">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                @if ($felhasznalo->roleID == 3)
-                    <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
-                        <h3 class="text-xl font-medium text-gray-700">Adminisztrátori Funkciók:</h3>
-                        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
-                            {{ ('Felhasználók kezelése') }}
-                        </x-nav-link>
-                        <x-nav-link :href="route('orak.index')" :active="request()->routeIs('orak.index')">
-                            {{ ('Óra időpontok kezelése') }}
-                        </x-nav-link>
-                        <x-nav-link :href="route('vizsga.index')" :active="request()->routeIs('vizsga.index')">
-                            {{ ('Vizsga időpontok kezelése') }}
-                        </x-nav-link>
-                    </div>
-                @endif
+        @if ($felhasznalo->roleID == 3)
+        <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
+            <h3 class="text-2xl font-bold text-gray-800">Adminisztrátori Funkciók:</h3>
+            <br>
+
+            <div class="flex space-x-4">
+                <a href="{{ route('users.index') }}" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 w-1/3 text-center">
+                    Felhasználók kezelése
+                </a>
+                <a href="{{ route('orak.index') }}" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 w-1/3 text-center">
+                    Óra időpontok kezelése
+                </a>
+                <a href="{{ route('vizsga.index') }}" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 w-1/3 text-center">
+                    Vizsga időpontok kezelése
+                </a>
+            </div>
+        </div>
+        @endif
+
             <div class="p-6 bg-gray-100">
                 <h2 class="text-2xl font-bold text-gray-800">Üdvözöljük a Dashboard-on!</h2>
                 <p class="mt-4 text-lg text-gray-600">Itt láthatja a felhasználói információkat és az alkalmazás főbb funkcióit.</p>
@@ -50,7 +55,6 @@
                     </div>
                 </div>
 
-                <!-- Aktivitások vagy egyéb információk -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Ide jönnek majd a vizsgák és órák holnap:</h3>
                     <p class="text-gray-600 mt-2">
