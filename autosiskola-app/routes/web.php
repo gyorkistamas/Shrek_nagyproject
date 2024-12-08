@@ -81,5 +81,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/vizsga/{vizsgaID}/edit', [VizsgaController::class, 'edit'])->name('vizsga.edit');
     Route::put('/vizsga/{vizsgaID}', [VizsgaController::class, 'update'])->name('vizsga.update');
     Route::delete('/vizsga/{vizsgaID}', [VizsgaController::class, 'destroy'])->name('vizsga.destroy');
+
 });
 
