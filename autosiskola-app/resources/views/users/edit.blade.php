@@ -65,6 +65,12 @@
                 </select>
             </div>
 
+            <div class="form-group">
+    <label for="roleID">Admin:</label>
+    <input type="checkbox" id="roleID" name="roleID" value="3" {{ old('roleID', $user->roleID) == 3 ? 'checked' : '' }}>
+</div>
+
+
             <button type="submit" class="btn btn-success">Frissítés</button>
 
             <a href="{{ route('users.index') }}" class="btn btn-secondary">Vissza</a>

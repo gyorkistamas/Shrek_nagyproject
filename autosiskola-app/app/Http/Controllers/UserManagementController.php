@@ -30,6 +30,7 @@ class UserManagementController extends Controller
             'szulhely' => ['required', 'string'],
             'elsosegelyvizsga' => ['nullable', 'boolean'],
             'szemuveg' => ['nullable', 'boolean'],
+            'roleID' => ['nullable', 'in:2,3'],
         ]);
     
         $user = Felhasznalo::where('taj', $taj)->first();
@@ -37,7 +38,9 @@ class UserManagementController extends Controller
             return redirect()->route('users.index')->with('error', 'Felhasználó nem található.');
         }
     
-        $user->update($validatedData);
+        $validatedData['roleID'] = $request->has('roleID') ? 3 : 2;
+$user->update($validatedData);
+
     
         return redirect()->route('users.index')->with('success', 'Felhasználó sikeresen frissítve.');
     }
