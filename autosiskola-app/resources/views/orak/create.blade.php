@@ -2,7 +2,7 @@
 
 @section('content')
 <style>
-    html, body {
+html, body {
         height: 100%;
         margin: 0;
         padding: 0;
@@ -11,58 +11,89 @@
         background-attachment: fixed !important;
         background-size: cover !important;
     }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00ff00;
+        }
 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #00ff00;
-    }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #00ff00;
-    }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #00ff00;
+            text-transform: uppercase;
+        }
 
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15px;
-    }
+        .form-control {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            color: #00ff00;
+        }
 
-    .form-group label {
-        font-weight: bold;
-        margin-bottom: 5px;
-        color: #00ff00;
-        text-transform: uppercase;
-    }
+        .form-control:focus {
+            outline: none;
+            border: 2px solid #00ff00;
+            background-color: #292929;
+        }
 
-    .form-control {
-        width: 50%;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #1e1e1e;
-        color: #00ff00;
-    }
+        .btn {
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
 
-    .form-control:focus {
-        outline: none;
-        border: 2px solid #00ff00;
-        background-color: #292929;
-    }
+        .btn-success {
+            background-color: #00ff00;
+            color: #121212;
+            border: none;
+        }
 
-    .btn {
-        display: inline-block;
-        text-align: center;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-        text-decoration: none;
-    }
+        .btn-success:hover {
+            background-color: #009900;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #666;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #444;
+            color: #fff;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
 
     .btn-primary {
         background-color: #00ff00;
@@ -75,32 +106,7 @@
         color: #fff;
     }
 
-    .btn-secondary {
-        background-color: #666;
-        color: #fff;
-        border: none;
-    }
-
-    .btn-secondary:hover {
-        background-color: #444;
-        color: #fff;
-    }
-
-    .btn-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    form {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #1e1e1e;
-        padding: 20px;
-        border-radius: 10px;
-    }
+    
 </style>
 
 <h1>Új Vizsga Időpont Létrehozása</h1>
