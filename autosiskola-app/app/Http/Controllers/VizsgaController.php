@@ -45,7 +45,7 @@ class VizsgaController extends Controller
     
     public function edit($vizsgaID)
     {
-        $ora = Vizsga::findOrFail($vizsgaID);
+        $vizsga = Vizsga::findOrFail($vizsgaID);
         return view('vizsgak.edit', compact('vizsga'));
     }
 
@@ -53,15 +53,16 @@ class VizsgaController extends Controller
     {
         $request->validate([
             'datum' => 'required|date_format:Y-m-d\TH:i',
-            'idotartam_perc' => 'required|integer',
+            'sikeresseg' => 'required|boolean',
+            'vizsgazo' => 'required|integer',
             'oktato' => 'required|integer',
-            'diak' => 'nullable|integer',
+            'vizsgaztato' => 'required|integer'
         ]);
 
-        $ora = Vizsga::findOrFail($vizsgaID);
-        $ora->update($request->only(['datum', 'sikeresseg', 'vizsgazo', 'oktato', 'vizsgaztato']));
+        $vizsga = Vizsga::findOrFail($vizsgaID);
+        $vizsga->update($request->only(['datum', 'sikeresseg', 'vizsgazo', 'oktato', 'vizsgaztato']));
 
-        return redirect()->route('orak.index')->with('success', 'Vizsga sikeresen frissítve.');
+        return redirect()->route('vizsga.index')->with('success', 'Vizsga sikeresen frissítve.');
     }
 
     public function destroy($vizsgaID)

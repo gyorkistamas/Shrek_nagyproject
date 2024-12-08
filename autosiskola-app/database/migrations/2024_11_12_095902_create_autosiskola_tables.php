@@ -35,7 +35,7 @@ class CreateAutosiskolaTables extends Migration
         });
 
         Schema::create('vizsga', function (Blueprint $table) {
-            $table->bigInteger('vizsgaID')->primary();
+            $table->id('vizsgaID')->primary();
             $table->date('datum');
             $table->boolean('sikeresseg');
             $table->bigInteger('vizsgazo');
