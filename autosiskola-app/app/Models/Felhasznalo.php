@@ -25,6 +25,7 @@ class Felhasznalo extends Model
         'szulhely',
         'elsosegelyvizsga',
         'szemuveg',
+        'roleID',
     ];
 
     protected $hidden = [

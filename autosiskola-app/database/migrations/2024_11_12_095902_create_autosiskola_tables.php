@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\DB; // Szükséges az adatbázisműveletekhez
+use Illuminate\Support\Facades\DB;
 
 class CreateAutosiskolaTables extends Migration
 {
@@ -56,11 +56,6 @@ class CreateAutosiskolaTables extends Migration
             $table->string('nev', 100);
         });
 
-        Schema::create('szerepek', function (Blueprint $table) {
-            $table->bigInteger('roleID')->primary();
-            $table->string('szerepnev', 100);
-        });
-
         Schema::create('felhasznalo', function (Blueprint $table) {
             $table->bigInteger('id');
             $table->string('nev', 200);
@@ -71,8 +66,8 @@ class CreateAutosiskolaTables extends Migration
             $table->string('szulhely');
             $table->boolean('elsosegelyvizsga');
             $table->boolean('szemuveg');
+            $table->bigInteger('roleID')->unsigned()->default(1);
         });
-
 
         DB::table('felhasznalo')->insert([
             [
@@ -85,6 +80,7 @@ class CreateAutosiskolaTables extends Migration
                 'szulhely' => 'Budapest',
                 'elsosegelyvizsga' => true,
                 'szemuveg' => false,
+                'roleID' => 3,
             ],
             [
                 'id' => 2,
@@ -96,6 +92,7 @@ class CreateAutosiskolaTables extends Migration
                 'szulhely' => 'Budapest',
                 'elsosegelyvizsga' => true,
                 'szemuveg' => true,
+                'roleID' => 2,
             ]
         ]);
 
@@ -115,11 +112,6 @@ class CreateAutosiskolaTables extends Migration
                 'updated_at' => now(),
             ]
         ]);
-
-        DB::table('szerepek')->insert([
-            ['roleID' => 1, 'szerepnev' => 'Admin'],
-            ['roleID' => 2, 'szerepnev' => 'User'],
-        ]);
     }
 
     public function down()
@@ -130,7 +122,6 @@ class CreateAutosiskolaTables extends Migration
         Schema::dropIfExists('vizsga');
         Schema::dropIfExists('orak');
         Schema::dropIfExists('varosok');
-        Schema::dropIfExists('szerepek');
         Schema::dropIfExists('felhasznalo');
     }
 }
