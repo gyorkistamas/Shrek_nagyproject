@@ -58,6 +58,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/users/edit/{taj}', [UserManagementController::class, 'edit'])->name('users.edit');
     Route::put('/users/update/{taj}', [UserManagementController::class, 'update'])->name('users.update');
     Route::delete('/users/delete/{taj}', [UserManagementController::class, 'destroy'])->name('users.delete');
+    Route::get('/users/search', [UserManagementController::class, 'search'])->name('users.search');
 });
 
 

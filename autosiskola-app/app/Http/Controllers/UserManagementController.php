@@ -54,6 +54,18 @@ class UserManagementController extends Controller
 
         return redirect()->route('users.index')->with('success', 'Felhasználó sikeresen törölve.');
     }
+
+    public function search(Request $request)
+    {
+        $taj = $request->input('taj');
+        $user = Felhasznalo::where('taj', $taj)->first();
+
+        if ($user) {
+            return redirect()->route('users.edit', ['taj' => $taj]);
+        } else {
+            return redirect()->route('users.index')->with('error', 'A keresett TAJ szám nem található.');
+        }
+    }
     
 }
 
