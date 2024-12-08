@@ -63,6 +63,10 @@
         background-color: #00ff00;
         color: #121212;
         border: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
     }
 
     .btn-primary:hover {
@@ -74,10 +78,15 @@
         background-color: #ff0000;
         color: #fff;
         border: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
     }
 
     .btn-danger:hover {
         background-color: #cc0000;
+        color: #fff;
     }
 
     .btn-secondary {
@@ -116,11 +125,11 @@
     }
 
     tr:nth-child(even) {
-        background-color: #1e1e1e;
+        background-color: #1a1a1a;
     }
 
     tr:nth-child(odd) {
-        background-color: #292929;
+        background-color: #1e1e1e;
     }
 
     tr:hover {

@@ -34,20 +34,20 @@
         width: 90%;
         margin: 0 auto;
         background-color: #1e1e1e;
-        border-radius: 10px;
         overflow: hidden;
     }
 
     .table th, 
     .table td {
-        text-align: center;
         padding: 15px;
+        text-align: center;
+        border: 1px solid #00ff00;
         color: #00ff00;
-        border: 1px solid #333;
     }
 
+
     .table th {
-        background-color: #333;
+        background-color: #121212;
         font-size: 16px;
         text-transform: uppercase;
     }
@@ -72,12 +72,12 @@
     }
 
     .btn-warning:hover {
-        background-color: #ff8800;
+        background-color: #009900;
         color: #fff;
     }
 
     .btn-danger {
-        background-color: #ff4444;
+        background-color: #ff0000;
         color: #fff;
         border: none;
         font-weight: bold;
