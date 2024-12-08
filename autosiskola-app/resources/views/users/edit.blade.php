@@ -6,51 +6,62 @@
 
         <form method="POST" action="{{ route('users.update', $user->taj) }}">
             @csrf
-            @method('POST')
+            @method('PUT')  <!-- Használjuk a PUT metódust -->
+
+            <!-- Hibák megjelenítése -->
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
             <div class="form-group">
                 <label for="nev">Név:</label>
-                <input type="text" class="form-control" id="nev" name="nev" value="{{ $user->nev }}" required>
+                <input type="text" class="form-control" id="nev" name="nev" value="{{ old('nev', $user->nev) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="szemelyi">Személyi szám:</label>
-                <input type="text" class="form-control" id="szemelyi" name="szemelyi" value="{{ $user->szemelyi }}" required>
+                <input type="text" class="form-control" id="szemelyi" name="szemelyi" value="{{ old('szemelyi', $user->szemelyi) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="szulido">Születési dátum:</label>
-                <input type="date" class="form-control" id="szulido" name="szulido" value="{{ $user->szulido->format('Y-m-d') }}" required>
+                <input type="date" class="form-control" id="szulido" name="szulido" value="{{ old('szulido', $user->szulido->format('Y-m-d')) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="taj">TAJ szám:</label>
-                <input type="text" class="form-control" id="taj" name="taj" value="{{ $user->taj }}" required>
+                <input type="text" class="form-control" id="taj" name="taj" value="{{ old('taj', $user->taj) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="adoszam">Adószám:</label>
-                <input type="text" class="form-control" id="adoszam" name="adoszam" value="{{ $user->adoszam }}" required>
+                <input type="text" class="form-control" id="adoszam" name="adoszam" value="{{ old('adoszam', $user->adoszam) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="szulhely">Születési hely:</label>
-                <input type="text" class="form-control" id="szulhely" name="szulhely" value="{{ $user->szulhely }}" required>
+                <input type="text" class="form-control" id="szulhely" name="szulhely" value="{{ old('szulhely', $user->szulhely) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="elsosegelyvizsga">Elsősegély vizsga:</label>
                 <select class="form-control" id="elsosegelyvizsga" name="elsosegelyvizsga" required>
-                    <option value="1" {{ $user->elsosegelyvizsga ? 'selected' : '' }}>Igen</option>
-                    <option value="0" {{ !$user->elsosegelyvizsga ? 'selected' : '' }}>Nem</option>
+                    <option value="1" {{ old('elsosegelyvizsga', $user->elsosegelyvizsga) == 1 ? 'selected' : '' }}>Igen</option>
+                    <option value="0" {{ old('elsosegelyvizsga', $user->elsosegelyvizsga) == 0 ? 'selected' : '' }}>Nem</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="szemuveg">Szemüveg szükséges:</label>
                 <select class="form-control" id="szemuveg" name="szemuveg" required>
-                    <option value="1" {{ $user->szemuveg ? 'selected' : '' }}>Igen</option>
-                    <option value="0" {{ !$user->szemuveg ? 'selected' : '' }}>Nem</option>
+                    <option value="1" {{ old('szemuveg', $user->szemuveg) == 1 ? 'selected' : '' }}>Igen</option>
+                    <option value="0" {{ old('szemuveg', $user->szemuveg) == 0 ? 'selected' : '' }}>Nem</option>
                 </select>
             </div>
 

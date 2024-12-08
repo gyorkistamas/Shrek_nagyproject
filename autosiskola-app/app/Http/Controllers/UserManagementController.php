@@ -21,9 +21,27 @@ class UserManagementController extends Controller
 
     public function update(Request $request, $taj)
     {
+        // Validációs szabályok
+        $validatedData = $request->validate([
+            'nev' => ['nullable', 'string', 'unique:felhasznalo,nev'],
+            'taj' => ['required', 'string', 'min:9', 'max:9'],
+            'szemelyi' => ['required', 'string', 'min:8', 'max:8'],
+            'adoszam' => ['required', 'string', 'min:10', 'max:10'],
+            'szulido' => ['required', 'date'],
+            'szulhely' => ['required', 'string'],
+            'elsosegelyvizsga' => ['nullable', 'boolean'],
+            'szemuveg' => ['nullable', 'boolean'],
+        ]);
+    
         $user = Felhasznalo::where('taj', $taj)->first();
-        $user->update($request->all());
+        if (!$user) {
+            return redirect()->route('users.index')->with('error', 'Felhasználó nem található.');
+        }
+    
+        $user->update($validatedData);
+    
         return redirect()->route('users.index')->with('success', 'Felhasználó sikeresen frissítve.');
     }
+    
 }
 
