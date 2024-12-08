@@ -2,7 +2,6 @@
 
 @section('content')
 <style>
-    /* Az egész oldalra alkalmazott háttérkép */
     html, body {
         height: 100%;
         margin: 0;

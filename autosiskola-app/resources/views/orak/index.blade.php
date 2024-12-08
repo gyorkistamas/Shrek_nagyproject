@@ -113,9 +113,9 @@
     }
 </style>
 
-<h1>Vizsga időpontok</h1>
+<h1>Óra időpontok</h1>
 
-<a href="{{ route('orak.create') }}" class="btn btn-primary">Új vizsga időpont</a>
+<a href="{{ route('orak.create') }}" class="btn btn-primary">Új óra időpont</a>
 
 <table class="table mt-4">
     <thead>
