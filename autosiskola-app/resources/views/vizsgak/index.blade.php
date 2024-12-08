@@ -41,7 +41,7 @@
                         <td class="py-3 px-6">{{ $vizsga->vizsgaztato }}</td>
 
                         <td class="py-3 px-6 flex space-x-2">
-                            <a href="{{ route('vizsga.edit', $vizsga->vizsgaID) }}" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50">
+                            <a href="{{ route('vizsga.edit', $vizsga->vizsgaID) }}" class="bg-gray-400 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50">
                                 Szerkesztés
                             </a>
                             <form action="{{ route('vizsga.destroy', $vizsga->vizsgaID) }}" method="POST" onsubmit="return confirm('Biztosan törölni szeretnéd ezt a vizsgát?');" class="inline-block">
