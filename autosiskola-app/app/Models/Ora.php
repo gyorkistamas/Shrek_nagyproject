@@ -11,6 +11,12 @@ class Ora extends Model
 
     protected $table = 'orak';
 
+    protected $primaryKey = 'oraID';
+
+    public $incrementing = false;
+
+    protected $keyType = 'bigint';
+
     protected $fillable = [
         'datum',
         'idotartam_perc',
@@ -18,17 +24,12 @@ class Ora extends Model
         'diak',
     ];
 
-    protected $primaryKey = 'oraID';
-
-    public $incrementing = true;
-
     public $timestamps = false;
 
     public function oktato()
     {
         return $this->belongsTo(User::class, 'oktato');
     }
-
 
     public function diak()
     {

@@ -69,5 +69,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/orak', [OraController::class, 'store'])->name('orak.store');
     Route::get('/orak/{oraID}/edit', [OraController::class, 'edit'])->name('orak.edit');
     Route::put('/orak/{oraID}', [OraController::class, 'update'])->name('orak.update');
+    Route::delete('/orak/{oraID}', [OraController::class, 'destroy'])->name('orak.destroy');
 });
 

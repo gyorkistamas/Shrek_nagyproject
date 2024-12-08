@@ -21,18 +21,17 @@ class OraController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'datum' => 'required|date',
+            'datum' => 'required|date_format:Y-m-d\TH:i',
             'idotartam_perc' => 'required|integer',
             'oktato' => 'required|integer',
             'diak' => 'nullable|integer',
         ]);
     
-        Ora::create($request->all());
+        Ora::create($request->only(['datum', 'idotartam_perc', 'oktato', 'diak']));
     
-        return redirect()->route('orak.index');
+        return redirect()->route('orak.index')->with('success', 'Óra sikeresen létrehozva.');
     }
     
-
     public function edit($oraID)
     {
         $ora = Ora::findOrFail($oraID);
@@ -41,17 +40,24 @@ class OraController extends Controller
 
     public function update(Request $request, $oraID)
     {
-
         $request->validate([
-            'datum' => 'required|date',
+            'datum' => 'required|date_format:Y-m-d\TH:i',
             'idotartam_perc' => 'required|integer',
             'oktato' => 'required|integer',
             'diak' => 'nullable|integer',
         ]);
 
         $ora = Ora::findOrFail($oraID);
-        $ora->update($request->all());
+        $ora->update($request->only(['datum', 'idotartam_perc', 'oktato', 'diak']));
 
-        return redirect()->route('orak.index');
+        return redirect()->route('orak.index')->with('success', 'Óra sikeresen frissítve.');
+    }
+
+    public function destroy($oraID)
+    {
+        $ora = Ora::findOrFail($oraID);
+        $ora->delete();
+
+        return redirect()->route('orak.index')->with('success', 'Óra sikeresen törölve.');
     }
 }
