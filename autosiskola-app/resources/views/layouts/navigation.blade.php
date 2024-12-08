@@ -30,15 +30,7 @@
     <x-nav-link :href="route('edit')" :active="request()->routeIs('edit')">
         {{ __('Felhasználó adatok szerkesztése') }}
     </x-nav-link>
-    @if ($felhasznalo->roleID == 3)
-    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
-        {{ __('Felhasználók kezelése') }}
-    </x-nav-link>
-    <x-nav-link :href="route('orak.index')" :active="request()->routeIs('orak.index')">
-        {{ __('Vizsga időpontok kezelése') }}
-    </x-nav-link>
-    @endif
-@endauth
+                    @endauth
 
 
             <!-- Settings Dropdown -->

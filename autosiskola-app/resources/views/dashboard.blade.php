@@ -4,6 +4,17 @@
 <div class="py-12" style="background-image: url('images/hatter.jpg'); background-position: center; background-attachment: fixed; background-size: cover; height: 100vh; width: 100%;">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                @if ($felhasznalo->roleID == 3)
+                    <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
+                        <h3 class="text-xl font-medium text-gray-700">Adminisztrátori Funkciók:</h3>
+                        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                            {{ ('Felhasználók kezelése') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('orak.index')" :active="request()->routeIs('orak.index')">
+                            {{ ('Vizsga időpontok kezelése') }}
+                        </x-nav-link>
+                    </div>
+                @endif
             <div class="p-6 bg-gray-100">
                 <h2 class="text-2xl font-bold text-gray-800">Üdvözöljük a Dashboard-on!</h2>
                 <p class="mt-4 text-lg text-gray-600">Itt láthatja a felhasználói információkat és az alkalmazás főbb funkcióit.</p>
