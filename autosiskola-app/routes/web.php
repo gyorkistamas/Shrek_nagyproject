@@ -61,4 +61,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/users/search', [UserManagementController::class, 'search'])->name('users.search');
 });
 
+use App\Http\Controllers\OraController;
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/orak', [OraController::class, 'index'])->name('orak.index');
+    Route::get('/orak/create', [OraController::class, 'create'])->name('orak.create');
+    Route::post('/orak', [OraController::class, 'store'])->name('orak.store');
+    Route::get('/orak/{oraID}/edit', [OraController::class, 'edit'])->name('orak.edit');
+    Route::put('/orak/{oraID}', [OraController::class, 'update'])->name('orak.update');
+});
 
