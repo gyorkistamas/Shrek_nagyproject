@@ -2,25 +2,13 @@
 
 @section('content')
 <style>
-        body {
-            background-image: url('{{ asset('images/hatter.jpg') }}');
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+
 
     h1 {
         text-align: center;
         margin-bottom: 20px;
         color: #00ff00;
+        
     }
 
     .btn-primary {
@@ -80,6 +68,7 @@
         padding: 8px 12px;
         border-radius: 5px;
         transition: all 0.3s ease;
+        
     }
 
     .btn-warning:hover {
@@ -111,6 +100,8 @@
         justify-content: center;
         gap: 10px;
     }
+
+
 </style>
 
 <h1>Óra időpontok</h1>

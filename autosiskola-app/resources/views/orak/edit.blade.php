@@ -2,23 +2,16 @@
 
 @section('content')
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-image: url('{{ asset('images/hatter.jpg') }}') !important;
-            background-position: center !important;
-            background-attachment: fixed !important;
-            background-size: cover !important;
-        }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #00ff00;
-        }
-
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url('{{ asset('images/hatter.jpg') }}') !important;
+        background-position: center !important;
+        background-attachment: fixed !important;
+        background-size: cover !important;
+    }
         h1 {
             text-align: center;
             margin-bottom: 20px;
@@ -39,14 +32,14 @@
             text-transform: uppercase;
         }
 
-        .form-control {
-            width: 50%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #1e1e1e;
-            color: #00ff00;
-        }
+        .form-control, .form-select {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1e1e1e;
+        color: #00ff00;
+    }
 
         .form-control:focus {
             outline: none;

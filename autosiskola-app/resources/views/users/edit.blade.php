@@ -12,12 +12,6 @@
         background-size: cover !important;
     }
 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #00ff00;
-    }
 
     h2 {
         text-align: center;
@@ -26,11 +20,13 @@
     }
 
     .container {
-        width: 100%;
-        max-width: 900px;
-        background-color: #1e1e1e;
-        padding: 20px;
-        border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
     }
 
     .form-group {
@@ -109,13 +105,14 @@
     }
 
     form {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #1e1e1e;
-        padding: 20px;
-        border-radius: 10px;
-    }
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
 </style>
 
 <div class="container">

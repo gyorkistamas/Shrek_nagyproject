@@ -2,22 +2,8 @@
 
 @section('content')
 <style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-image: url('{{ asset('images/hatter.jpg') }}') !important;
-        background-position: center !important;
-        background-attachment: fixed !important;
-        background-size: cover !important;
-    }
 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #00ff00;
-    }
+
 
     h2 {
         text-align: center;
@@ -26,11 +12,12 @@
     }
 
     .container {
-        width: 100%;
-        max-width: 900px;
-        background-color: #1e1e1e;
-        padding: 20px;
-        border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
     }
 
     .form-group {
