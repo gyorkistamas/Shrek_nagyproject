@@ -23,6 +23,12 @@
                     <td>{{ $ora->diak ?? 'N/A' }}</td>
                     <td>
                         <a href="{{ route('orak.edit', $ora->oraID) }}" class="btn btn-warning">Szerkesztés</a>
+
+                        <form action="{{ route('orak.destroy', $ora->oraID) }}" method="POST" style="display:inline-block;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Biztosan törölni szeretnéd ezt az időpontot?')">Törlés</button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
