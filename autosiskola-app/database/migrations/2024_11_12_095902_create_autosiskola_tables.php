@@ -44,11 +44,11 @@ class CreateAutosiskolaTables extends Migration
         });
 
         Schema::create('orak', function (Blueprint $table) {
-            $table->bigInteger('oraID')->primary();
+            $table->bigIncrements('oraID');
             $table->date('datum');
             $table->integer('idotartam_perc');
             $table->bigInteger('oktato');
-            $table->bigInteger('diak');
+            $table->bigInteger('diak')->nullable();
         });
 
         Schema::create('varosok', function (Blueprint $table) {
@@ -66,7 +66,7 @@ class CreateAutosiskolaTables extends Migration
             $table->string('szulhely');
             $table->boolean('elsosegelyvizsga');
             $table->boolean('szemuveg');
-            $table->bigInteger('roleID')->unsigned()->default(1);
+            $table->bigInteger('roleID')->unsigned()->default(2);
         });
 
         DB::table('felhasznalo')->insert([
