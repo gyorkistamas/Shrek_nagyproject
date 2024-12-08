@@ -11,6 +11,9 @@
                             {{ ('Felhasználók kezelése') }}
                         </x-nav-link>
                         <x-nav-link :href="route('orak.index')" :active="request()->routeIs('orak.index')">
+                            {{ ('Óra időpontok kezelése') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('vizsga.index')" :active="request()->routeIs('vizsga.index')">
                             {{ ('Vizsga időpontok kezelése') }}
                         </x-nav-link>
                     </div>

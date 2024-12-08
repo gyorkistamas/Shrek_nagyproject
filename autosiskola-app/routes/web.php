@@ -72,3 +72,14 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/orak/{oraID}', [OraController::class, 'destroy'])->name('orak.destroy');
 });
 
+use App\Http\Controllers\VizsgaController;
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/vizsga', [VizsgaController::class, 'index'])->name('vizsga.index');
+    Route::get('/vizsga/create', [VizsgaController::class, 'create'])->name('vizsga.create');
+    Route::post('/vizsga', [VizsgaController::class, 'store'])->name('vizsga.store');
+    Route::get('/vizsga/{vizsgaID}/edit', [VizsgaController::class, 'edit'])->name('vizsga.edit');
+    Route::put('/vizsga/{vizsgaID}', [VizsgaController::class, 'update'])->name('vizsga.update');
+    Route::delete('/vizsga/{vizsgaID}', [VizsgaController::class, 'destroy'])->name('vizsga.destroy');
+});
+
