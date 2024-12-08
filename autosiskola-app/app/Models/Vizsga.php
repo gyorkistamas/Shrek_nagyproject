@@ -21,4 +21,19 @@ class Vizsga extends Model
         'oktato',
         'vizsgaztato',
     ];
+
+     public function vizsgazo()
+     {
+         return $this->belongsTo(User::class, 'vizsgazo');
+     }
+ 
+     public function oktato()
+     {
+         return $this->belongsTo(User::class, 'oktato');
+     }
+ 
+     public function vizsgaztato()
+     {
+         return $this->belongsTo(User::class, 'vizsgaztato');
+     }
 }

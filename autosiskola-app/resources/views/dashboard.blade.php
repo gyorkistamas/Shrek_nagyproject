@@ -5,7 +5,7 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
         @if ($felhasznalo->roleID == 3)
-        <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
+        <div class="mt-2 p-4 bg-white shadow-sm rounded-lg">
             <h3 class="text-2xl font-bold text-gray-800">Adminisztrátori Funkciók:</h3>
             <br>
 
