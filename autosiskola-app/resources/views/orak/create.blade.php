@@ -28,6 +28,8 @@
         <input type="number" name="diak" id="diak" class="form-control">
     </div>
 
+    <a href="{{ route('orak.index') }}" class="btn btn-secondary">Vissza</a>
+
     <button type="submit" class="btn btn-primary">Létrehozás</button>
 </form>
 

@@ -31,6 +31,7 @@
             <input type="number" name="diak" class="form-control" value="{{ $ora->diak }}">
         </div>
         
+        <a href="{{ route('orak.index') }}" class="btn btn-secondary">Vissza</a>
         <button type="submit" class="btn btn-success mt-3">Frissítés</button>
     </form>
 @endsection
