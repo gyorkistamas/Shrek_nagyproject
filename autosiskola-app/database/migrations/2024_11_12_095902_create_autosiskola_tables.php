@@ -44,8 +44,8 @@ class CreateAutosiskolaTables extends Migration
         });
 
         Schema::create('orak', function (Blueprint $table) {
-            $table->bigIncrements('oraID');
-            $table->date('datum');
+            $table->id('oraID')->primary();
+            $table->datetime('datum');
             $table->integer('idotartam_perc');
             $table->bigInteger('oktato');
             $table->bigInteger('diak')->nullable();
