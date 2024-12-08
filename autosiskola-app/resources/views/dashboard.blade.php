@@ -58,63 +58,63 @@
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Ide jönnek majd a vizsgák és órák holnap:</h3>
                     <p class="text-gray-600 mt-2">
-                        <table>
+                        <table class="min-w-full">
                             <thead>
                                 <tr>
-                                    <th>Órák</th>
-                                    <th>Vizsgák</th>
+                                    <th class="py-2 px-4 border-b">Órák</th>
+                                    <th class="py-2 px-4 border-b">Vizsgák</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                    <table>
+                                    <td class="border-b">
+                                    <table class="min-w-full">
                                         <thead>
                                             <tr>
-                                                <th>Oktató</th>
-                                                <th>Időtartam</th>
-                                                <th>Dátum</th>
+                                                <th class="py-2 px-4 border-b">Oktató</th>
+                                                <th class="py-2 px-4 border-b">Időtartam</th>
+                                                <th class="py-2 px-4 border-b">Dátum</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         @forelse ($orak as $ora)
                                             <tr>
-                                                <td>{{ $ora->oktato }}</td> 
-                                                <td>{{ $ora->idotartam_perc }} perc</td>
-                                                <td>{{ \Carbon\Carbon::parse($ora->datum)->format('Y-m-d') }}</td>
+                                                <td class="py-2 px-4 border-b">{{ $ora->oktato }}</td> 
+                                                <td class="py-2 px-4 border-b">{{ $ora->idotartam_perc }} perc</td>
+                                                <td class="py-2 px-4 border-b">{{ \Carbon\Carbon::parse($ora->datum)->format('Y-m-d') }}</td>
                                             </tr>
                                         @empty
                                             <tr>
-                                                <td colspan="3" class="text-center">Még nincs egyetlen óra sem.</td>
+                                                <td colspan="3" class="text-center py-2 px-4 border-b">Még nincs egyetlen óra sem.</td>
                                             </tr>
                                         @endforelse
                                         </tbody>
                                     </table>
                                     </td>
                                         
-                                    <td>
-                                    <table>
+                                    <td class="border-b">
+                                    <table class="min-w-full">
                                         <thead>
                                             <tr>
-                                                <th>Dátum</th>
-                                                <th>Sikeresség</th>
-                                                <th>Vizsgázó</th>
-                                                <th>Oktató</th>
-                                                <th>Vizsgáztató</th>
+                                                <th class="py-2 px-4 border-b">Dátum</th>
+                                                <th class="py-2 px-4 border-b">Sikeresség</th>
+                                                <th class="py-2 px-4 border-b">Vizsgázó</th>
+                                                <th class="py-2 px-4 border-b">Oktató</th>
+                                                <th class="py-2 px-4 border-b">Vizsgáztató</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @forelse ($vizsgak as $vizsga)
                                                 <tr>
-                                                    <td>{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
-                                                    <td>{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
-                                                    <td>{{ $vizsga->vizsgazo->name ?? 'N/A' }}</td>
-                                                    <td>{{ $vizsga->oktato->name ?? 'N/A' }}</td>
-                                                    <td>{{ $vizsga->vizsgaztato->name ?? 'N/A' }}</td>
+                                                    <td class="py-2 px-4 border-b">{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
+                                                    <td class="py-2 px-4 border-b">{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
+                                                    <td class="py-2 px-4 border-b">{{ $vizsga->vizsgazo->name ?? 'N/A' }}</td>
+                                                    <td class="py-2 px-4 border-b">{{ $vizsga->oktato->name ?? 'N/A' }}</td>
+                                                    <td class="py-2 px-4 border-b">{{ $vizsga->vizsgaztato->name ?? 'N/A' }}</td>
                                                 </tr>
                                             @empty
                                                 <tr>
-                                                    <td colspan="5" class="text-center">Nincs elérhető vizsga.</td>
+                                                    <td colspan="5" class="text-center py-2 px-4 border-b">Nincs elérhető vizsga.</td>
                                                 </tr>
                                             @endforelse
                                         </tbody>
