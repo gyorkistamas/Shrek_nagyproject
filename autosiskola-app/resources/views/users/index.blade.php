@@ -60,7 +60,7 @@
     }
 
     .btn-primary {
-        background-color: #00ff00;
+        background-color: #ffaa00;
         color: #121212;
         border: none;
         font-weight: bold;
@@ -70,7 +70,7 @@
     }
 
     .btn-primary:hover {
-        background-color: #009900;
+        background-color: #000;
         color: #fff;
     }
 

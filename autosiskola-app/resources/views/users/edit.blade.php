@@ -120,9 +120,8 @@
 
     <form method="POST" action="{{ route('users.update', $user->taj) }}">
         @csrf
-        @method('PUT')  <!-- PUT metódus -->
+        @method('PUT')
 
-        <!-- Hibák megjelenítése -->
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
