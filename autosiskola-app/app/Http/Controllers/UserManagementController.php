@@ -22,7 +22,7 @@ class UserManagementController extends Controller
     public function update(Request $request, $taj)
     {
         $validatedData = $request->validate([
-            'nev' => ['nullable', 'string', 'unique:felhasznalo,nev'],
+            'nev' => ['nullable', 'string', 'unique:felhasznalo,nev,' . $request->taj . ',taj'],
             'taj' => ['required', 'string', 'min:9', 'max:9'],
             'szemelyi' => ['required', 'string', 'min:8', 'max:8'],
             'adoszam' => ['required', 'string', 'min:10', 'max:10'],
@@ -32,6 +32,7 @@ class UserManagementController extends Controller
             'szemuveg' => ['nullable', 'boolean'],
             'roleID' => ['nullable', 'in:2,3'],
         ]);
+        
     
         $user = Felhasznalo::where('taj', $taj)->first();
         if (!$user) {
