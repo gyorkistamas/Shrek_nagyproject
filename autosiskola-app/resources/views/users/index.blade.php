@@ -18,6 +18,12 @@
                         <td>{{ $user->taj }}</td>
                         <td>
                             <a href="{{ route('users.edit', $user->taj) }}" class="btn btn-primary">Szerkesztés</a>
+
+                            <form action="{{ route('users.delete', $user->taj) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Biztosan törli ezt a felhasználót?')">Törlés</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

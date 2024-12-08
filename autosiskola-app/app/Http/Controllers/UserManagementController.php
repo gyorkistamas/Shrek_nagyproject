@@ -42,6 +42,18 @@ class UserManagementController extends Controller
     
         return redirect()->route('users.index')->with('success', 'Felhasználó sikeresen frissítve.');
     }
+
+    public function destroy($taj)
+    {
+        $user = Felhasznalo::where('taj', $taj)->first();
+        if (!$user) {
+            return redirect()->route('users.index')->with('error', 'Felhasználó nem található.');
+        }
+
+        $user->delete();
+
+        return redirect()->route('users.index')->with('success', 'Felhasználó sikeresen törölve.');
+    }
     
 }
 
