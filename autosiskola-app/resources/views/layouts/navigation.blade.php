@@ -24,22 +24,20 @@
 
                     <!-- Ha a felhasználó be van jelentkezve, jelenjen meg a profil és kijelentkezés link -->
                     @auth
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                            {{ __('Dashboard') }}
-                        </x-nav-link>
-                        <x-nav-link :href="route('edit')" :active="request()->routeIs('edit')">
-                            {{ __('Felhasználó adatok szerkesztése') }}
-                        </x-nav-link>
+    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+        {{ __('Dashboard') }}
+    </x-nav-link>
+    <x-nav-link :href="route('edit')" :active="request()->routeIs('edit')">
+        {{ __('Felhasználó adatok szerkesztése') }}
+    </x-nav-link>
+    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+        {{ __('Felhasználók kezelése') }}
+    </x-nav-link>
+    <x-nav-link :href="route('orak.index')" :active="request()->routeIs('orak.index')">
+        {{ __('Vizsga időpontok kezelése') }}
+    </x-nav-link>
+@endauth
 
-                        @auth
-                        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
-                            {{ __('Felhasználók kezelése') }}
-                        </x-nav-link>
-                        @endauth
-
-                    @endauth
-                </div>
-            </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
