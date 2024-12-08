@@ -32,14 +32,14 @@
             text-transform: uppercase;
         }
 
-        .form-control {
-            width: 50%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #1e1e1e;
-            color: #00ff00;
-        }
+        .form-control, .form-select {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1e1e1e;
+        color: #00ff00;
+    }
 
         .form-control:focus {
             outline: none;
