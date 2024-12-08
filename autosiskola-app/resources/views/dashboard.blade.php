@@ -39,7 +39,73 @@
                 <!-- Aktivitások vagy egyéb információk -->
                 <div class="mt-6 p-4 bg-white shadow-sm rounded-lg">
                     <h3 class="text-xl font-medium text-gray-700">Ide jönnek majd a vizsgák és órák holnap:</h3>
-                    <p class="text-gray-600 mt-2"></p>
+                    <p class="text-gray-600 mt-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Órák</th>
+                                    <th>Vizsgák</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Oktató</th>
+                                                <th>Időtartam</th>
+                                                <th>Dátum</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        @forelse ($orak as $ora)
+                                            <tr>
+                                                <td>{{ $ora->oktato }}</td> 
+                                                <td>{{ $ora->idotartam_perc }} perc</td>
+                                                <td>{{ \Carbon\Carbon::parse($ora->datum)->format('Y-m-d') }}</td>
+                                            </tr>
+                                        @empty
+                                            <tr>
+                                                <td colspan="3" class="text-center">Még nincs egyetlen óra sem.</td>
+                                            </tr>
+                                        @endforelse
+                                        </tbody>
+                                    </table>
+                                    </td>
+                                        
+                                    <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Dátum</th>
+                                                <th>Sikeresség</th>
+                                                <th>Vizsgázó</th>
+                                                <th>Oktató</th>
+                                                <th>Vizsgáztató</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @forelse ($vizsgak as $vizsga)
+                                                <tr>
+                                                    <td>{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
+                                                    <td>{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
+                                                    <td>{{ $vizsga->vizsgazo->name ?? 'N/A' }}</td>
+                                                    <td>{{ $vizsga->oktato->name ?? 'N/A' }}</td>
+                                                    <td>{{ $vizsga->vizsgaztato->name ?? 'N/A' }}</td>
+                                                </tr>
+                                            @empty
+                                                <tr>
+                                                    <td colspan="5" class="text-center">Nincs elérhető vizsga.</td>
+                                                </tr>
+                                            @endforelse
+                                        </tbody>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
                 </div>
             </div>
         </div>
