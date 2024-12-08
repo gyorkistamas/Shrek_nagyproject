@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Hash;
 
 class RegisteredUserController extends Controller
 {
-    // Regisztrációs űrlap megjelenítése
     public function create()
     {
         return view('auth.register');
@@ -39,14 +38,12 @@ class RegisteredUserController extends Controller
             $randomId = random_int(1000000000, 9999999999);
         } while (DB::table('bejelentkezes')->where('felhasznalo', $randomId)->exists());
     
-        // Regisztráció a bejelentkezéshez
         $user = User::create([
             'felhasznalo' => $randomId,
             'email' => $request->email,
             'jelszo' => Hash::make($request->password),
         ]);
     
-        // Regisztráció a felhasználói táblába, roleID alapértelmezett értékkel
         $felhasznalo = felhasznalo::create([
             'id' => $randomId,
             'nev' => $request->nev,
@@ -57,13 +54,12 @@ class RegisteredUserController extends Controller
             'szulhely' => $request->szulhely,
             'elsosegelyvizsga' => $request->elsosegelyvizsga,
             'szemuveg' => $request->szemuveg,
-            'roleID' => 2, // Alapértelmezett szerep: User
+            'roleID' => 2,
         ]);
     
-        // Automatikus bejelentkezés
         Auth::login($user);
     
-        // Átirányítás a főoldalra
+
         return redirect()->route('dashboard');
     }
 }

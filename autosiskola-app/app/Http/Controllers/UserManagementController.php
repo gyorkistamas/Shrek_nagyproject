@@ -21,7 +21,6 @@ class UserManagementController extends Controller
 
     public function update(Request $request, $taj)
     {
-        // Validációs szabályok
         $validatedData = $request->validate([
             'nev' => ['nullable', 'string', 'unique:felhasznalo,nev'],
             'taj' => ['required', 'string', 'min:9', 'max:9'],
