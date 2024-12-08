@@ -66,6 +66,8 @@
             </div>
 
             <button type="submit" class="btn btn-success">Frissítés</button>
+
+            <a href="{{ route('users.index') }}" class="btn btn-secondary">Vissza</a>
         </form>
     </div>
 @endsection
