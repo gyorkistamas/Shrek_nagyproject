@@ -22,7 +22,7 @@ class UserManagementController extends Controller
     public function update(Request $request, $taj)
     {
         $validatedData = $request->validate([
-            'nev' => ['nullable', 'string', 'unique:felhasznalo,nev'],
+            'nev' => ['nullable', 'string', 'unique:felhasznalo,nev,' . $request->taj . ',taj'],
             'taj' => ['required', 'string', 'min:9', 'max:9'],
             'szemelyi' => ['required', 'string', 'min:8', 'max:8'],
             'adoszam' => ['required', 'string', 'min:10', 'max:10'],
@@ -30,14 +30,18 @@ class UserManagementController extends Controller
             'szulhely' => ['required', 'string'],
             'elsosegelyvizsga' => ['nullable', 'boolean'],
             'szemuveg' => ['nullable', 'boolean'],
+            'roleID' => ['nullable', 'in:2,3'],
         ]);
+        
     
         $user = Felhasznalo::where('taj', $taj)->first();
         if (!$user) {
             return redirect()->route('users.index')->with('error', 'Felhasználó nem található.');
         }
     
-        $user->update($validatedData);
+        $validatedData['roleID'] = $request->has('roleID') ? 3 : 2;
+$user->update($validatedData);
+
     
         return redirect()->route('users.index')->with('success', 'Felhasználó sikeresen frissítve.');
     }
