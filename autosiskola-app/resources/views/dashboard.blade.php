@@ -113,7 +113,7 @@
                                 <tr class="bg-red-50">
                                     <td class="py-2 px-4 border-b text-center">{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
-                                    <td class="py-2 px-4 border-b text-center">{{ $felhasznalo->nev ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->nev ?? 'N/A' }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->oktato ?? 'N/A' }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->vizsgaztato ?? 'N/A' }}</td>
                                 </tr>
@@ -127,7 +127,7 @@
                                 <tr class="bg-red-50">
                                     <td class="py-2 px-4 border-b text-center">{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
-                                    <td class="py-2 px-4 border-b text-center">{{ $felhasznalo->nev ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->nev ?? 'N/A' }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->oktato ?? 'N/A' }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->vizsgaztato ?? 'N/A' }}</td>
                                 </tr>
