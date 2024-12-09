@@ -10,13 +10,14 @@
 | A_002 | Dashboard megtekintése "Admin" szintű felhasználóval | Az oldal megjeleníti az adminisztrátori gombokat | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_003 | Nem megfelelő jogosultsági szinttel az admin oldalakhoz tartozó útvonalak használata | Megtagadja a kérést és visszairányít a dashboardra | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_004 | Megfelelő jogosultsági szinttel az admin oldalakhoz tartozó útvonalak használata | A műveletek és átirányítások végrehajtásra kerülnek | Megegyzik a várt eredménnyel | Nem találtam hibát |
+| A_004 | Megfelelő jogosultsági szinttel az admin oldalakhoz tartozó útvonalak használata | A műveletek és átirányítások végrehajtásra kerülnek | Megegyzik a várt eredménnyel | Nem találtam hibát |
 
 
 ### Admin felhasználó kezelés ###
 | Teszt szám | Teszt eset | Várt eredmény | Tényleges Eredmény | Megjegyzés |
 |------------|------------|---------------|--------------------|------------|
 | A_005 | Az oldal kilistázza az összes felhasználót az adatbázisból | Az oldal megjeleníti a felhasználókat egy táblázatban | Megegyzik a várt eredménnyel | Nem találtam hibát |
-| A_006 | Törlés művelet gomb használata | Törli az adott felhasználót a rendszerből | Megegyzik a várt eredménnyel. | Nem találtam hibát |
+| A_006 | Törlés művelet gomb használata | Törli az adott felhasználót a rendszerből | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_007 | Szerkesztés művelet gomb használata | Átirányít az adott felhasználóhoz tartozó adatok szerkesztő oldalára | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_008 | Hiányos vagy hibás adatbevitel a szerkesztés során | Az oldal elmenti a felhasználó adatait a megadott adatokkal | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_009 | Helyes adatbevitel a szerkesztés során | Az oldal szerkeszti a felhasználó adatait a megadottakal | Megegyzik a várt eredménnyel | Nem találtam hibát |
@@ -33,7 +34,7 @@
 | A_013 | Az oldal kilistázza az összes órát az adatbázisból | Az oldal megjeleníti az órákat egy táblázatban | Megegyzik a várt eredménnyel. | Nem találtam hibát |
 | A_014 | Törlés művelet gomb használata | Törli az adott órát a rendszerből | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_015 | Szerkesztés művelet gomb használata | Átirányít az adott órához tartozó adatok szerkesztő oldalára | Megegyzik a várt eredménnyel | Nem találtam hibát |
-| A_016 | Hiányos vagy hibás adatbevitel a szerkesztés során | Az oldal figyelmeztet a hibákra | Megegyzik a várt eredménnyel. | Nem találtam hibát |
+| A_016 | Hiányos adatbevitel a szerkesztés során | Az oldal figyelmeztet a hiányoságokra | Megegyzik a várt eredménnyel. | Nem találtam hibát |
 | A_017 | Helyes adatbevitel a szerkesztés során | Az oldal elmenti az óra adatait a megadott adatokkal | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_018 | Új óra létrehozásakor nem megfelelő adatok kitöltése | Az oldal figyelmeztet a hiányosságokra | Megegyzik a várt eredménnyel | Nem találtam hibát |
 | A_019 | Új óra létrehozása helyesen megadott adatokkal | Létrehozza az órát a megadott adatokkal az adatbázisban | Megegyzik a várt eredménnyel | Nem találtam hibát |
