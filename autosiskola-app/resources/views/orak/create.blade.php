@@ -109,7 +109,7 @@ html, body {
     
 </style>
 
-<h1>Új Vizsga Időpont Létrehozása</h1>
+<h1>Új Óra időpont létrehozása</h1>
 
 <form method="POST" action="{{ route('orak.store') }}">
     @csrf
