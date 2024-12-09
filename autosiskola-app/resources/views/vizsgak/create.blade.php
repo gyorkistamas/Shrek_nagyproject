@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container mx-auto py-8">
-    <h1 class="text-4xl font-bold text-center text-white mb-8">Vizsga hozzáadása
-    </h1>
+    <h1 class="text-4xl font-bold text-center text-white mb-8">Vizsga hozzáadása</h1>
 
     <div class="bg-white shadow-lg rounded-lg p-6 max-w-4xl mx-auto">
         <form method="POST" action="{{ route('vizsga.store') }}">
