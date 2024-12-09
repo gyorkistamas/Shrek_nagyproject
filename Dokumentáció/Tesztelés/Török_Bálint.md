@@ -18,4 +18,5 @@
 | TB_008 | Vizsga létrehozása gomb az ADMIN funkciókban | Rákattintás után átirányít a kilistázott vizsgákhoz | Megfelel a várt eredménynek | Nem találtam hibát |
 | TB_009 | Dashboard, órák megjelenítése (ADMIN) | Az összes oktató, diák órája megjelenik a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
 | TB_010 | Dashboard, órák megjelenítése (Guest) | Saját órák megjelennek a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
-| TB_011 | Dashboard, vizsgák megjelenítése (ADMIN) | Az összes oktató, diák órája megjelenik a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
+| TB_011 | Dashboard, vizsgák megjelenítése (ADMIN) | Az összes oktató, diák vizsgája megjelenik a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
+| TB_012 | Dashboard, vizsgák megjelenítése (Guest) | Saját vizsgák megjelennek a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
