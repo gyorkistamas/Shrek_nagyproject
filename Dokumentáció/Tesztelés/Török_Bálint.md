@@ -16,3 +16,6 @@
 | TB_006 | Vizsgaeredmény törlése | Vizsga sikeres törlése az adatbázisból | 'Biztosan törölni szeretné?' értesítés elfogadása után, a vizsga sikeresen törölve lesz | Nem találtam hibát |
 | TB_007 | Adott vizsga szerkesztése | Vizsga adatainak szerkesztése | Átirányítás után a vizsga adatait módosítani lehet, viszont nem maradhat kitöltetlen mező | Nem találtam hibát |
 | TB_008 | Vizsga létrehozása gomb az ADMIN funkciókban | Rákattintás után átirányít a kilistázott vizsgákhoz | Megfelel a várt eredménynek | Nem találtam hibát |
+| TB_009 | Dashboard, órák megjelenítése (ADMIN) | Az összes oktató, diák órája megjelenik a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
+| TB_010 | Dashboard, órák megjelenítése (Guest) | Saját órák megjelennek a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |
+| TB_011 | Dashboard, vizsgák megjelenítése (ADMIN) | Az összes oktató, diák órája megjelenik a dashboardon | Megfelel a várt eredménynek | Nem találtam hibát |

@@ -108,19 +108,36 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($vizsgak as $vizsga)
+                        @if ($felhasznalo->roleID == 2)
+                            @forelse ($vizsgak->where('vizsgazo', auth()->id()) as $vizsga)
                                 <tr class="bg-red-50">
                                     <td class="py-2 px-4 border-b text-center">{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
                                     <td class="py-2 px-4 border-b text-center">{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
-                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->vizsgazo->name ?? 'N/A' }}</td>
-                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->oktato->name ?? 'N/A' }}</td>
-                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->vizsgaztato->name ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $felhasznalo->nev ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->oktato ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->vizsgaztato ?? 'N/A' }}</td>
                                 </tr>
                             @empty
                                 <tr>
                                     <td colspan="5" class="text-center py-2 px-4 border-b">Nincs elérhető vizsga.</td>
                                 </tr>
                             @endforelse
+                        @else
+                            @forelse ($vizsgak as $vizsga)
+                                <tr class="bg-red-50">
+                                    <td class="py-2 px-4 border-b text-center">{{ \Carbon\Carbon::parse($vizsga->datum)->format('Y-m-d') }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->sikeresseg ? 'Sikeres' : 'Sikertelen' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $felhasznalo->nev ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->oktato ?? 'N/A' }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $vizsga->vizsgaztato ?? 'N/A' }}</td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="5" class="text-center py-2 px-4 border-b">Nincs elérhető vizsga.</td>
+                                </tr>
+                            @endforelse
+                        @endif
+
                         </tbody>
                     </table>
                 </div>
