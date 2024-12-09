@@ -65,6 +65,19 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @if ($felhasznalo->roleID == 2)
+                            @forelse ($orak->where('diak', auth()->id()) as $ora)
+                                <tr class="bg-green-50">
+                                    <td class="py-2 px-4 border-b text-center">{{ $ora->oktato }}</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ $ora->idotartam_perc }} perc</td>
+                                    <td class="py-2 px-4 border-b text-center">{{ \Carbon\Carbon::parse($ora->datum)->format('Y-m-d') }}</td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="3" class="text-center py-2 px-4 border-b">Még nincs egyetlen óra sem.</td>
+                                </tr>
+                            @endforelse
+                        @else
                             @forelse ($orak as $ora)
                                 <tr class="bg-green-50">
                                     <td class="py-2 px-4 border-b text-center">{{ $ora->oktato }}</td>
@@ -76,6 +89,8 @@
                                     <td colspan="3" class="text-center py-2 px-4 border-b">Még nincs egyetlen óra sem.</td>
                                 </tr>
                             @endforelse
+                        @endif
+
                         </tbody>
                     </table>
                 </div>
